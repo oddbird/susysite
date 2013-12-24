@@ -1,0 +1,11 @@
+---
+active_modules: [pygments, tags, blog, typogrify]
+author: Eric A. Meyer
+canonical_url: http://susy.oddbird.com/
+output_folder: ../output
+template_path: ../templates
+modules:
+  pygments:
+    style: borland
+  blog:
+    index_url: /blog/

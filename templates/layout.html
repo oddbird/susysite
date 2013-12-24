@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block layout %}
+<header role="banner">
+  <h1>Susy</h1>
+  <h2>Your Layout / Our Math</h2>
+</header>
+
+<main role="main">
+  {% block main %}{% endblock %}
+</main>
+
+<footer role="contentinfo">
+  Copyright &copy; 2013 Eric A. Meyer
+</footer>
+{% endblock %}

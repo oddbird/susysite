@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block title %}{{ rst.title }}{% endblock %}
+
+{% block styles %}
+  {{ super() }}
+  {% if config.styles %}
+    <link rel="stylesheet" href="/static/css/{{ config.styles }}">
+  {% endif %}
+{% endblock styles %}
+
+{% block bodyclasses %}{{ super() }}{% if config.bodyclasses %} {{ config.bodyclasses }}{% endif %}{% endblock %}
+
+{% block main %}
+
+  {%- if not config.hide_title %}
+  {{ rst.html_title }}
+  {%- endif %}
+
+  {% include "_byline.html" %}
+
+  {{ rst.fragment }}
+
+  {% if 'disqus' in config.active_modules %}
+    {{ get_disqus() }}
+  {% endif %}
+
+{% endblock %}

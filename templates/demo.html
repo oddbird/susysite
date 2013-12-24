@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block styles %}
+  {% if config.styles %}
+    <link rel="stylesheet" href="/static/css/{{ config.styles }}">
+  {% else %}
+    {{ super() }}
+  {% endif %}
+{% endblock %}
+
+{% block layout %}
+  {{ rst.fragment }}
+{% endblock %}

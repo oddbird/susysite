@@ -1,0 +1,11 @@
+--extra-index-url http://chishop.oddbird.net/simple
+
+rstblog==1.0.obc2
+PyYAML==3.10
+Babel==0.9.6
+blinker==1.2
+docutils==0.9.1
+Jinja2==2.6
+Werkzeug==0.8.3
+Pygments==1.5
+smartypants==1.6.0.3

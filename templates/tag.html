@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title %}Entries tagged “{{ tag.name }}”{% endblock %}
+{% block main %}
+  <h1 class="title">Entries <a href="{{ link_to('tagcloud') }}">tagged</a> “{{ tag.name }}”</h1>
+  <ul class="tag-archive">
+  {%- for entry in entries %}
+    <li>
+      {%- if entry.pub_date %}
+        <time datetime="{{ entry.pub_date.isoformat() }}">
+          {{ entry.pub_date.strftime("%m/%d/%y") }}
+        </time>
+      {% endif %}
+      <a href="{{ link_to('page', slug=entry.slug) }}">{{ entry.title }}</a>
+    </li>
+  {%- endfor %}
+  </ul>
+{% endblock %}

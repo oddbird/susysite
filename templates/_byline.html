@@ -1,0 +1,16 @@
+{% if ctx.pub_date or ctx.tags %}
+<p class="byline">
+  {% if ctx.pub_date %}
+  <time datetime="{{ ctx.pub_date.isoformat() }}" pubdate="pubdate">
+    {{ ctx.pub_date.strftime("%B %d, %Y") }}
+  </time>
+  {% endif %}
+  {% if ctx.tags %}
+    in
+    {% for tag in ctx.tags|sort(case_sensitive=true) %}
+      {%- if not loop.first %}, {% endif -%}
+      <a href="{{ link_to('tag', tag=tag) }}">{{ tag }}</a>
+    {%- endfor %}.
+  {% endif %}
+</p>
+{% endif %}

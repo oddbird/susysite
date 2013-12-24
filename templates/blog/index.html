@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block title %}Blog{% endblock %}
+{% block main %}
+
+  {%- for ctx in pagination.get_slice() %}
+  <article class="post">
+    <h1 class="title">
+      <a href="{{ link_to('page', slug=ctx.slug) }}">
+        {{ ctx.title }}
+      </a>
+    </h1>
+
+    {% include "_byline.html" %}
+
+    <div class="body">
+      {% if ctx.summary %}
+        {{ ctx.render_summary() }}
+        <a href="{{ link_to('page', slug=ctx.slug) }}" class="readmore">
+          read more
+        </a>
+      {% else %}
+        {{ ctx.render_contents() }}
+      {% endif %}
+    </div>
+  </article>
+  {%- endfor %}
+
+  {% if show_pagination and pagination.pages > 1 %}
+    {{ pagination }}
+  {% endif %}
+{% endblock %}
