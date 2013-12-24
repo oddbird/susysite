@@ -1,0 +1,17 @@
+// Settings Toolkit
+// ================
+
+$settings: ();
+
+@mixin set(
+  $map
+) {
+  $settings: map-merge($settings, $map) !global;
+}
+
+@function get(
+  $setting,
+  $map: $settings
+) {
+  @return deep-get($map, $setting...);
+}

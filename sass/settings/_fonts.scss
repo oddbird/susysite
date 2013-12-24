@@ -1,0 +1,44 @@
+// Font Settings
+// =============
+
+$fonts: (
+  sans: (
+    name: SourceSansPro,
+    type: sans-serif,
+    stack: (
+      "Helvetica Neue", Helvetica, Arial,
+    ),
+    files: (
+      normal: 'sans/sourcesanspro-regular-webfont',
+      bold: 'sans/sourcesanspro-bold-webfont',
+      light: 'sans/sourcesanspro-light-webfont',
+      italic: 'sans/sourcesanspro-italic-webfont',
+      bold italic: 'sans/sourcesanspro-bolditalic-webfont',
+      light italic: 'sans/sourcesanspro-lightitalic-webfont',
+    ),
+  ),
+
+  code: (
+    name: SourceCodePro,
+    type: monospace,
+    stack: (
+      Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono",
+      "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New",
+    ),
+    files: (
+      normal: 'code/sourcecodepro-regular-webfont',
+      bold: 'code/sourcecodepro-bold-webfont',
+    ),
+  ),
+
+  amp: (
+    name: BaskervilleAmp,
+    type: serif,
+    stack: (
+      Baskerville, Palatino, Cambria, Georgia,
+    ),
+    files: (
+      normal: 'amp/Baskerville-amp-webfont',
+    ),
+  ),
+);

@@ -1,0 +1,18 @@
+// Root
+// ====
+
+$grid-background-baseline-color: rgba(black, .125);
+
+@include fonts;
+@include establish-baseline;
+
+html {
+  @extend %sans;
+  @include show-grids(show-baseline);
+  padding: rhythm(2);
+}
+
+h1 { font-weight: bold; }
+h2 { font-style: italic; }
+
+main { @include rhythm-margins; }
