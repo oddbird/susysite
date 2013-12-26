@@ -1,18 +1,12 @@
 {% extends "base.html" %}
 
 {% block layout %}
-<header role="banner">
-  <h1>
-    <a href="http://susy.oddbird.net/">Susy</a>
-  </h1>
-  <h2>Your Layout / Our Math</h2>
-</header>
+{% include "layout/_banner.html" %}
+{% include "layout/_nav.html" %}
 
 <main role="main">
   {% block main %}{% endblock %}
 </main>
 
-<footer role="contentinfo">
-  Copyright &copy; 2013 Eric A. Meyer
-</footer>
+{% include "layout/_contentinfo.html" %}
 {% endblock %}

@@ -1,3 +1,28 @@
+head:hover ~ #susy::before,
+head:hover ~ body #susy::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: " ";
+  z-index: 998;
+}
+
+[data-icon] {
+  font-family: 'susy';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-decoration: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -108,6 +133,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "susy";
+  src: url('../fonts/icons/susy.woff?1388089676') format("woff"), url('../fonts/icons/susy.ttf?1388089676') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 html {
   font-family: SourceSansPro, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -117,8 +148,110 @@ html {
   line-height: 1.38889em;
 }
 
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html {
-  padding: 1.38889em;
+  border-top-width: 0.66667rem;
+  border-top-style: solid;
+  padding-top: 0.72222rem;
+  border-color: deepskyblue;
+  background: white;
+  color: #666666;
+}
+
+body {
+  *zoom: 1;
+  max-width: 55em;
+  margin-left: 0;
+  margin-right: auto;
+  margin-top: -1.38889rem;
+  padding-top: 1.38889rem;
+  margin-bottom: -1.38889rem;
+  padding-bottom: 1.38889rem;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+head {
+  display: block;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 999;
+  color: #333;
+  background: rgba(255, 255, 255, 0.25);
+}
+head::before {
+  content: "|||";
+  display: block;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+head:hover {
+  box-shadow: 0 0 1px rgba(51, 51, 51, 0.5);
+  background: rgba(255, 255, 255, 0.5);
+}
+head:hover ~ #susy,
+head:hover ~ body #susy {
+  position: relative;
+}
+head:hover ~ #susy::before,
+head:hover ~ body #susy::before {
+  background-image: -moz-linear-gradient(left, rgba(127, 223, 255, 0.125), rgba(204, 242, 255, 0.125));
+  background-image: -o-linear-gradient(left, rgba(127, 223, 255, 0.125), rgba(204, 242, 255, 0.125));
+  background-image: -webkit-linear-gradient(left, rgba(127, 223, 255, 0.125), rgba(204, 242, 255, 0.125));
+  background-image: linear-gradient(to right, rgba(127, 223, 255, 0.125), rgba(204, 242, 255, 0.125));
+  -webkit-background-size: 10%;
+  background-size: 10%;
+  -webkit-background-origin: content-box;
+  -webkit-background-clip: content-box;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top;
+}
+
+[data-icon]:before {
+  content: attr(data-icon);
+}
+
+[data-icon='github']:before {
+  content: "\e600";
+}
+
+[data-icon='twitter']:before {
+  content: "\e601";
+}
+
+[data-icon='stackoverflow']:before {
+  content: "\e602";
+}
+
+[data-icon='list']:before {
+  content: "\e603";
+}
+
+[data-icon='logo']:before {
+  content: "\e604";
+}
+
+.a11y-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 a:link, a:visited {
@@ -126,4 +259,98 @@ a:link, a:visited {
 }
 a:hover, a:focus, a:active {
   color: deepskyblue;
+}
+
+[role="banner"] {
+  *zoom: 1;
+  margin-bottom: 0.69444rem;
+}
+[role="banner"]:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+[role="banner"] [rel="home"]:link, [role="banner"] [rel="home"]:visited {
+  width: 20%;
+  float: left;
+  padding-left: 0.52083rem;
+  padding-right: 0.52083rem;
+  font-size: 2.44444rem;
+  line-height: 2.77778rem;
+  padding-top: 0.69444rem;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  text-align: right;
+  text-decoration: none;
+}
+[role="banner"] [rel="home"]:hover, [role="banner"] [rel="home"]:focus, [role="banner"] [rel="home"]:active {
+  color: white;
+  background-color: #ff0080;
+}
+[role="banner"] .p-name, [role="banner"] .p-role {
+  margin-left: 20%;
+  padding-left: 0.52083rem;
+  padding-right: 0.52083rem;
+}
+[role="banner"] .p-name {
+  padding-top: 0.69444rem;
+  font-weight: bold;
+}
+
+[data-nav] {
+  padding-left: 0.52083rem;
+  padding-right: 0.52083rem;
+  display: block;
+  white-space: nowrap;
+}
+[data-nav] [data-icon] {
+  font-size: 0.77778rem;
+  line-height: 1.38889rem;
+}
+[data-nav]:link, [data-nav]:visited {
+  text-decoration: none;
+}
+@media (min-width: 38em) {
+  [data-nav] {
+    display: inline-block;
+  }
+}
+
+[role="navigation"] {
+  margin-left: 20%;
+  margin-bottom: 0.69444rem;
+}
+
+[role="main"] {
+  padding-left: 0.52083rem;
+  padding-right: 0.52083rem;
+  border-top-width: 0.05556rem;
+  border-top-style: solid;
+  padding-top: 2.02778rem;
+  border-bottom-width: 0.05556rem;
+  border-bottom-style: solid;
+  padding-bottom: 2.02778rem;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-style: dashed;
+  border-color: #e5e5e5;
+}
+@media (min-width: 38em) {
+  [role="main"] {
+    margin-left: 20%;
+  }
+}
+
+[role="contentinfo"] {
+  clear: both;
+  padding-left: 0.52083rem;
+  padding-right: 0.52083rem;
+  margin-top: 0.69444rem;
+}
+@media (min-width: 38em) {
+  [role="contentinfo"] {
+    margin-left: 20%;
+  }
 }

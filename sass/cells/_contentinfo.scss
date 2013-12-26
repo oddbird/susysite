@@ -1,0 +1,10 @@
+// ContentInfo
+// ===========
+
+[role="contentinfo"] {
+  @include break;
+  @include gutters;
+  @include leader(.5);
+
+  @include breakpoint($nav-break) { @include pre(2); }
+}

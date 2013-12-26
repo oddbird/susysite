@@ -1,0 +1,14 @@
+// Grid Settings
+// =============
+
+$susy: (
+  columns: 10,
+  gutters: .25,
+  column-width: rhythm(3),
+  gutter-position: inside-static,
+);
+
+$debug: (
+  color: color(lighter $accent, .125),
+  toggle: top right,
+);

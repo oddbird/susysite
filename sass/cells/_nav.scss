@@ -1,0 +1,19 @@
+// Nav
+// ===
+
+$nav-break: 38em;
+
+[data-nav] {
+  @include gutters;
+  display: block;
+  white-space: nowrap;
+
+  [data-icon] { @include font-size(xsmall); }
+  @include link { text-decoration: none; }
+  @include breakpoint($nav-break) { display: inline-block; }
+}
+
+[role="navigation"] {
+  @include pre(2);
+  @include trailer(.5);
+}

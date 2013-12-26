@@ -2,7 +2,7 @@ public: yes
 hide_title: yes
 
 
-Home
+Susy
 ====
 
 Hello World!

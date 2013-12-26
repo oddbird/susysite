@@ -9,3 +9,23 @@ modules:
     style: borland
   blog:
     index_url: /blog/
+
+# Banner
+banner_title: Susy
+banner_url: 'http://susy.oddbird.net/'
+banner_tagline: 'Your layout, our math.'
+
+# Navigation
+nav:
+  - name: Documentation
+    url: 'http://susydocs.oddbird.net/'
+    icon: list
+  - name: Support
+    url: 'http://stackoverflow.com/questions/tagged/susy-compass'
+    icon: stackoverflow
+  - name: Source
+    url: 'http://github.com/ericam/susy/'
+    icon: github
+  - name: Twitter
+    url: 'http://twitter.com/sasssusy/'
+    icon: twitter

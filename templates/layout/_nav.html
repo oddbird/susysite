@@ -1,0 +1,10 @@
+{% from '_atoms.html' import icon %}
+
+<nav role="navigation">
+  {% for item in config.nav %}
+  <a href="{{ item.url }}" data-nav="{{ item.name }}">
+    {{ icon(item.icon) }}
+    <span>{{ item.name }}</span>
+  </a>
+  {% endfor %}
+</nav>

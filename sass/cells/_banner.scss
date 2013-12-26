@@ -1,0 +1,32 @@
+// Banner
+// ======
+
+[role="banner"] {
+  @include susy-clearfix;
+  @include trailer(.5);
+
+  [rel="home"] {
+    @include link {
+      @include span(2);
+      @include font-size(xlarge);
+      @include padding-leader(.5);
+      @include transition(all 300ms);
+      text-align: right;
+      text-decoration: none;
+    }
+    @include focus {
+      color: $bg-color;
+      background-color: $alt;
+    }
+  }
+
+  .p-name, .p-role {
+    @include pre(2);
+    @include gutters;
+  }
+
+  .p-name {
+    @include padding-leader(.5);
+    font-weight: bold;
+  }
+}

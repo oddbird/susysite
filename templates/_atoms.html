@@ -1,0 +1,4 @@
+{% macro icon(icon, alt_text) %}
+<span data-icon="{{ icon }}" aria-hidden="true"> </span>
+{% if alt_text %}<span class="a11y-hidden">{{ alt_text }}</span>{% endif %}
+{% endmacro %}

@@ -1,0 +1,15 @@
+// Main
+// ====
+
+[role="main"] {
+  @include gutters;
+  @include h-borders(1px, 1.5);
+  border: {
+    left-width: 0;
+    right-width: 0;
+    style: dashed;
+    color: color(lightest);
+  }
+
+  @include breakpoint($nav-break) { @include pre(2); }
+}

@@ -1,0 +1,9 @@
+{% from "_atoms.html" import icon %}
+
+<header role="banner" class="h-card">
+  <a href="{{ config.banner_url }}" rel="home" class="p-url">
+    {{ icon('logo', 'Home') }}
+  </a>
+  <h1 class="p-name p-org">{{ config.banner_title }}</h1>
+  <h2 class="p-role">{{ config.banner_tagline }}</h2>
+</header>
