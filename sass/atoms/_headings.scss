@@ -1,0 +1,16 @@
+// Headings
+// ========
+
+%h1 { @include font-size(xxlarge); }
+%h2 { @include font-size(xlarge); }
+%h3 { @include font-size(large); }
+%h4 { @include font-size(medium); }
+%h5 { font-weight: bold; }
+
+%headings {
+  h1 { @extend %h1; }
+  h2 { @extend %h2; }
+  h3 { @extend %h3; }
+  h4 { @extend %h4; }
+  h5 { @extend %h5; }
+}

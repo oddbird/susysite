@@ -4,14 +4,14 @@
 $settings: ();
 
 @mixin set(
-  $map
+  $key,
+  $value
 ) {
-  $settings: map-merge($settings, $map) !global;
+  $settings: map-merge($settings, ($key: $value)) !global;
 }
 
 @function get(
-  $setting,
-  $map: $settings
+  $keys
 ) {
-  @return deep-get($map, $setting...);
+  @return deep-get($settings, $keys...);
 }

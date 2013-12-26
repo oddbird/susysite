@@ -8,11 +8,5 @@ $grid-background-baseline-color: rgba(black, .125);
 
 html {
   @extend %sans;
-  @include show-grids(show-baseline);
-  padding: rhythm(2);
+  padding: rhythm(1);
 }
-
-h1 { font-weight: bold; }
-h2 { font-style: italic; }
-
-main { @include rhythm-margins; }

@@ -29,6 +29,8 @@
   @each $key in $keys {
     @if type-of($return) == map {
       $return: map-get($return, $key);
+    } @else {
+      @warn "#{$return} is not a map for #{$key}.";
     }
   }
 

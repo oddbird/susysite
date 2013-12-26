@@ -113,30 +113,17 @@ html {
 }
 
 html {
-  font-size: 100%;
-  line-height: 1.5em;
+  font-size: 112.5%;
+  line-height: 1.38889em;
 }
 
 html {
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.125) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.125) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.125) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.125) 5%, rgba(0, 0, 0, 0) 5%);
-  -webkit-background-size: 100% 24px;
-  background-size: 100% 24px;
-  background-position: left top;
-  padding: 3em;
+  padding: 1.38889em;
 }
 
-h1 {
-  font-weight: bold;
+a:link, a:visited {
+  color: #ff0080;
 }
-
-h2 {
-  font-style: italic;
-}
-
-main {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+a:hover, a:focus, a:active {
+  color: deepskyblue;
 }

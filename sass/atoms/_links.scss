@@ -1,0 +1,32 @@
+// Links
+// =====
+
+@include set(link-selectors, (
+  link: '&:link, &:visited',
+  focus: '&:hover, &:focus, &:active',
+));
+
+@function link(
+  $selector: link
+) {
+  @return get(link-selectors $selector);
+}
+
+@mixin link(
+  $selector: link
+) {
+  #{link($selector)} { @content; }
+}
+
+@mixin focus {
+  @include link(focus) { @content; }
+}
+
+%link {
+  @include link { color: $alt; }
+  @include focus { color: $accent; }
+}
+
+a {
+  @extend %link;
+}
