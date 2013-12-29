@@ -1,7 +1,66 @@
 // Nav
 // ===
 
-$nav-break: 38em;
+$nav-medium: 30em;
+
+[role="navigation"] {
+  @include padding-leader(.5);
+
+  @include breakpoint($nav-medium $nav-break) {
+    text-align: center;
+  }
+
+  @include breakpoint($nav-break) {
+    @include span(last 8);
+    @include padding-leader(1.5);
+    text-align: right;
+  }
+}
+
+[id="toggle-nav"] {
+  @include toggle {
+    ~ [for="toggle-nav"] { color: $alt; }
+    ~ .nav-content { @extend %show-nav; }
+  }
+}
+
+[for="toggle-nav"] {
+  @include span(last 2);
+  text-align: right;
+
+  @include breakpoint($nav-break) { display: none; }
+}
+
+@mixin show-nav {
+  @include trailer(.5);
+  @include transition(all 300ms);
+  opacity: 1;
+  max-height: rhythm(10);
+}
+
+.nav-content {
+  @include break;
+  @include leading-border(scale(xxxsmall), .75);
+  @include trailer(-3);
+  overflow: hidden;
+  opacity: 0;
+  max-height: 0;
+  border-color: $alt;
+
+  @include breakpoint(max-width $nav-break - 3em) {
+    @include transition(all 300ms);
+  }
+
+  @include breakpoint($nav-break) {
+    @include show-nav;
+    border: 0;
+    padding-top: 0;
+  }
+}
+
+%show-nav {
+  @include show-nav;
+}
 
 [data-nav] {
   @include gutters;
@@ -10,10 +69,8 @@ $nav-break: 38em;
 
   [data-icon] { @include font-size(xsmall); }
   @include link { text-decoration: none; }
-  @include breakpoint($nav-break) { display: inline-block; }
-}
-
-[role="navigation"] {
-  @include pre(2);
-  @include trailer(.5);
+  @include focus {
+    [data-icon]:before { content: get(icons external); }
+  }
+  @include breakpoint($nav-medium) { display: inline-block; }
 }

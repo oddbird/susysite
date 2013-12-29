@@ -1,5 +1,5 @@
 ---
-active_modules: [pygments, tags, blog, typogrify]
+active_modules: [pygments_simple, tags, blog, wrap, typogrify]
 author: Eric A. Meyer
 canonical_url: http://susy.oddbird.com/
 output_folder: ../output
@@ -13,7 +13,7 @@ modules:
 # Banner
 banner_title: Susy
 banner_url: 'http://susy.oddbird.net/'
-banner_tagline: 'Your layout, our math.'
+banner_tagline: 'your layout | <em>our math</em>'
 
 # Navigation
 nav:

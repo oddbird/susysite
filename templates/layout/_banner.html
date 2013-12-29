@@ -5,5 +5,5 @@
     {{ icon('logo', 'Home') }}
   </a>
   <h1 class="p-name p-org">{{ config.banner_title }}</h1>
-  <h2 class="p-role">{{ config.banner_tagline }}</h2>
+  <h2 class="p-role">{{ config.banner_tagline|safe }}</h2>
 </header>

@@ -1,0 +1,54 @@
+// Type
+// ====
+
+%body {
+  strong { font-weight: bold; }
+  em, blockquote { font-style: italic; }
+
+  p, ul, ol, pre, blockquote { @include trailer; }
+  p:empty { display: none; }
+  ul { list-style-type: disc; }
+  ol { list-style-type: decimal; }
+
+  tt, code, pre {
+    @extend %code;
+    @include font-size(small);
+  }
+
+  tt {
+    display: inline-block;
+    padding: 0 rhythm(.25);
+    background-color: color(lightest $alt, .25);
+  }
+
+  pre {
+    overflow-x: auto;
+    padding: rhythm(.5);
+    border-left: rhythm(.25) solid color(lightest $alt, .5);
+    background: color(98%);
+  }
+
+  blockquote {
+    padding: 0 rhythm(.75);
+    border-left: rhythm(.25) solid;
+    em { font-style: normal; }
+  }
+
+  ul, ol, blockquote {
+    margin-left: rhythm(1);
+    @include breakpoint(48em) { margin-left: 0; }
+    ul, ol { margin-left: rhythm(1); }
+  }
+
+  img { max-width: 100%; }
+}
+
+%type {
+  @extend %headings;
+  @extend %body;
+}
+
+.amp {
+  @extend %amp;
+  font-style: normal !important;
+}

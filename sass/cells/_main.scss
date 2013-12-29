@@ -1,15 +1,44 @@
 // Main
 // ====
 
-[role="main"] {
-  @include gutters;
-  @include h-borders(1px, 1.5);
-  border: {
-    left-width: 0;
-    right-width: 0;
-    style: dashed;
-    color: color(lightest);
+@mixin section-arrow(
+  $color,
+  $size: 1.5,
+  $border: xxxsmall
+) {
+  $small: $size - .5;
+
+  @include leading-border(scale($border), $size + 2);
+  position: relative;
+  border-color: $color;
+
+  @include arrow(before down rhythm($size) $color) {
+    margin-left: rhythm(- $size);
+  }
+  @include arrow(after down rhythm($small) $bg-color) {
+    margin-left: rhythm(- $small);
   }
 
-  @include breakpoint($nav-break) { @include pre(2); }
+  &:before, &:after {
+    left: 50%;
+    top: - scale($border);
+  }
+}
+
+.content {
+  @include break;
+  @include section-arrow($alt);
+  background: $bg-color;
+}
+
+[role="main"] {
+  @extend %type;
+  @include container;
+
+  > .section {
+    @include gutters;
+    @include leading-border(1px, 2);
+    @include padding-trailer;
+    border-color: color(lightest);
+  }
 }

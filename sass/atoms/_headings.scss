@@ -1,16 +1,43 @@
 // Headings
 // ========
 
-%h1 { @include font-size(xxlarge); }
-%h2 { @include font-size(xlarge); }
-%h3 { @include font-size(large); }
-%h4 { @include font-size(medium); }
-%h5 { font-weight: bold; }
+%h1 {
+  @include trailer;
+  @include font-size(medium);
+  @include transition(all 200ms);
+  text-align: center;
+
+  @include breakpoint(30em) {
+    @include font-size(xlarge);
+    @include trailer(2);
+  }
+}
+
+%h2, %h3, %h4 {
+  @include trailer(.5);
+  position: relative;
+}
+
+%h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+%h3 { text-transform: uppercase; }
+
+%h4 {
+  font-style: italic;
+  &:before {
+    content: ' » ';
+    position: absolute;
+    right: 100%;
+    margin-right: .4em;
+  }
+}
 
 %headings {
   h1 { @extend %h1; }
   h2 { @extend %h2; }
   h3 { @extend %h3; }
   h4 { @extend %h4; }
-  h5 { @extend %h5; }
 }

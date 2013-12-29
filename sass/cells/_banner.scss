@@ -1,32 +1,33 @@
 // Banner
 // ======
 
+$nav-break: 50em;
+
 [role="banner"] {
-  @include susy-clearfix;
+  @include span(10);
   @include trailer(.5);
 
   [rel="home"] {
     @include link {
-      @include span(2);
+      @include gutters;
+      @include padding-leader(.675);
       @include font-size(xlarge);
-      @include padding-leader(.5);
-      @include transition(all 300ms);
-      text-align: right;
+      float: left;
       text-decoration: none;
-    }
-    @include focus {
-      color: $bg-color;
-      background-color: $alt;
     }
   }
 
   .p-name, .p-role {
-    @include pre(2);
-    @include gutters;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   .p-name {
     @include padding-leader(.5);
     font-weight: bold;
   }
+
+  em { font-style: italic; }
+
+  @include breakpoint($nav-break) { width: span(4); }
 }

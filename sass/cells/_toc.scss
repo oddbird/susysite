@@ -1,0 +1,17 @@
+// Table of Contents
+// =================
+
+.contents {
+  @extend .section;
+
+  .topic-title { @extend %h2; }
+
+  > ul {
+    ul {
+      @include delimited-list;
+      font-style: italic;
+    }
+    ul { display: block; }
+    a { display: inline-block; }
+  }
+}

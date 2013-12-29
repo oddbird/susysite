@@ -1,10 +1,31 @@
 // ContentInfo
 // ===========
 
-[role="contentinfo"] {
-  @include break;
-  @include gutters;
-  @include leader(.5);
+.foot {
+  @include section-arrow($accent);
+  @include rhythm-padding(2, .5);
+  background-color: color(lightest $accent);
+}
 
-  @include breakpoint($nav-break) { @include pre(2); }
+[role="contentinfo"] {
+  @include clearfix;
+  @include gutters;
+  @include font-size(small);
+
+  p { @include trailer; }
+
+  .credit { font-style: italic; }
+  .license {
+    font-style: normal;
+    &:after { content: ' | '; }
+  }
+}
+
+@include breakpoint(40em) {
+  .foot { @include rhythm-padding(1, 0); }
+  .credit, .colophon {
+    @include span(6);
+    max-width: 25rem;
+  }
+  .colophon { @include last(no-gutters); }
 }

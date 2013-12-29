@@ -1,0 +1,21 @@
+// Gallery
+// =======
+
+.gallery {
+  > a, > img {
+    @include gallery(5 of 10 after);
+    @include trailer(.5);
+    @include transition(all 200ms);
+    @include box-shadow(0 0 scale(xxxsmall) color(dark, .5));
+
+    @include focus {
+      @include box-shadow(0 0 scale(xxxsmall) $alt);
+      @include transform(unquote('scale(1.05) rotate(2deg)'));
+      z-index: 10;
+    }
+  }
+}
+
+.gallery-caption {
+  @include break;
+}

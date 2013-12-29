@@ -1,0 +1,10 @@
+// Sites Using Susy
+// ================
+
+.sitelist {
+  ul { @include delimited-list; }
+  ul {
+    @include trailer;
+    display: block;
+  }
+}

@@ -9,16 +9,9 @@ $grid-background-baseline-color: rgba(black, .125);
 
 html {
   @extend %sans;
-  @include leading-border(scale(xxsmall), 1);
-  border-color: $accent;
+  @include padding-leader(.5);
   background: $bg-color;
   color: $text-color;
 }
 
-body {
-  @include container(55em left);
-  @include bleed-y(rhythm(1));
-}
-
-@include grid-overlay('#susy' layout($susy show-columns));
 @include icons;

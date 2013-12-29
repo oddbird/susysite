@@ -1,0 +1,7 @@
+// Toggle Toolkit
+// ==============
+
+@mixin toggle {
+  @extend %a11y-hidden;
+  &:checked { @content; }
+}
