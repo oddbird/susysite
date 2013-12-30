@@ -724,6 +724,7 @@ Override the type of shell containing your grid.
   $container-style: magic;
 
 - ``<style>``: ``magic`` | ``static`` | ``fluid``.
+
   - ``magic``: Susy's magic grid has a set width,
     but becomes fluid rather than overflowing the viewport at small sizes.
   - ``static``: Susy's static grid will retain the width defined in your settings
