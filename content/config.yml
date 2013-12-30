@@ -4,6 +4,7 @@ author: Eric A. Meyer
 canonical_url: http://susy.oddbird.com/
 output_folder: ../output
 template_path: ../templates
+rst_writer: html5writer
 modules:
   pygments:
     style: borland
