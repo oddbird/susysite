@@ -57,7 +57,9 @@ class Wrap(Directive):
         element_id = self.options.get('id', None)
         if element_id is not None:
             node['ids'].append(element_id)
-        node['classes'].extend(self.options['class'])
+        cls = self.options.get('class')
+        if cls:
+            node['classes'].extend(cls)
         self.add_name(node)
         self.state.nested_parse(self.content, self.content_offset, node)
         return [node]
