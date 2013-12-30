@@ -3,19 +3,19 @@
 
 $nav-break: 50em;
 
+[rel="home"] {
+  @include link {
+    @include gutters;
+    @include padding-leader(.675);
+    @include font-size(xlarge);
+    float: left;
+    text-decoration: none;
+  }
+}
+
 [role="banner"] {
   @include span(10);
   @include trailer(.5);
-
-  [rel="home"] {
-    @include link {
-      @include gutters;
-      @include padding-leader(.675);
-      @include font-size(xlarge);
-      float: left;
-      text-decoration: none;
-    }
-  }
 
   .p-name, .p-role {
     overflow: hidden;
@@ -25,9 +25,19 @@ $nav-break: 50em;
   .p-name {
     @include padding-leader(.5);
     font-weight: bold;
+    &:after {
+      @include transition(all 200ms);
+      content: ' [soo·zee]';
+      opacity: 0;
+      color: color(lighter);
+    }
   }
 
   em { font-style: italic; }
+
+  @include focus {
+    .p-name:after { opacity: 1; }
+  }
 
   @include breakpoint($nav-break) { width: span(4); }
 }

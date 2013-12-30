@@ -40,7 +40,7 @@ $nav-medium: 30em;
 
 .nav-content {
   @include break;
-  @include leading-border(scale(xxxsmall), .75);
+  @include leading-border(size(xxxsmall), .75);
   @include trailer(-3);
   overflow: hidden;
   opacity: 0;

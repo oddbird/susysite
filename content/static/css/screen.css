@@ -330,19 +330,29 @@ a:hover, a:focus, a:active {
   clear: none;
 }
 .gallery > a:hover, .gallery > a:focus, .gallery > a:active, .gallery > img:hover, .gallery > img:focus, .gallery > img:active {
-  -moz-box-shadow: 0 0 9px #ff0080;
-  -webkit-box-shadow: 0 0 9px #ff0080;
-  box-shadow: 0 0 9px #ff0080;
-  -moz-transform: scale(1.05) rotate(2deg);
-  -ms-transform: scale(1.05) rotate(2deg);
-  -o-transform: scale(1.05) rotate(2deg);
-  -webkit-transform: scale(1.05) rotate(2deg);
-  transform: scale(1.05) rotate(2deg);
+  -moz-box-shadow: 0 0 9px deepskyblue;
+  -webkit-box-shadow: 0 0 9px deepskyblue;
+  box-shadow: 0 0 9px deepskyblue;
+  -moz-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+  -webkit-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
   z-index: 10;
 }
 
 .gallery-caption {
   clear: both;
+}
+
+[rel="home"]:link, [rel="home"]:visited {
+  padding-left: 0.52083rem;
+  padding-right: 0.52083rem;
+  padding-top: 0.9375rem;
+  font-size: 2.44444rem;
+  line-height: 2.77778rem;
+  float: left;
+  text-decoration: none;
 }
 
 [role="banner"] {
@@ -352,15 +362,6 @@ a:hover, a:focus, a:active {
   padding-right: 0.52083rem;
   margin-bottom: 0.69444rem;
 }
-[role="banner"] [rel="home"]:link, [role="banner"] [rel="home"]:visited {
-  padding-left: 0.52083rem;
-  padding-right: 0.52083rem;
-  padding-top: 0.9375rem;
-  font-size: 2.44444rem;
-  line-height: 2.77778rem;
-  float: left;
-  text-decoration: none;
-}
 [role="banner"] .p-name, [role="banner"] .p-role {
   overflow: hidden;
   white-space: nowrap;
@@ -369,8 +370,20 @@ a:hover, a:focus, a:active {
   padding-top: 0.69444rem;
   font-weight: bold;
 }
+[role="banner"] .p-name:after {
+  -moz-transition: all 200ms;
+  -o-transition: all 200ms;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  content: ' [soo·zee]';
+  opacity: 0;
+  color: #bfbfbf;
+}
 [role="banner"] em {
   font-style: italic;
+}
+[role="banner"]:hover .p-name:after, [role="banner"]:focus .p-name:after, [role="banner"]:active .p-name:after {
+  opacity: 1;
 }
 @media (min-width: 50em) {
   [role="banner"] {

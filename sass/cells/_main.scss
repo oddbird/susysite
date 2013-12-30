@@ -8,7 +8,7 @@
 ) {
   $small: $size - .5;
 
-  @include leading-border(scale($border), $size + 2);
+  @include leading-border(size($border), $size + 2);
   position: relative;
   border-color: $color;
 
@@ -21,7 +21,7 @@
 
   &:before, &:after {
     left: 50%;
-    top: - scale($border);
+    top: - size($border);
   }
 }
 

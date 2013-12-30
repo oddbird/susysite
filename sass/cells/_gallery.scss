@@ -6,11 +6,11 @@
     @include gallery(5 of 10 after);
     @include trailer(.5);
     @include transition(all 200ms);
-    @include box-shadow(0 0 scale(xxxsmall) color(dark, .5));
+    @include box-shadow(0 0 size(xxxsmall) color(dark, .5));
 
     @include focus {
-      @include box-shadow(0 0 scale(xxxsmall) $alt);
-      @include transform(unquote('scale(1.05) rotate(2deg)'));
+      @include box-shadow(0 0 size(xxxsmall) $accent);
+      @include scale(1.05);
       z-index: 10;
     }
   }

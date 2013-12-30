@@ -30,7 +30,7 @@
 
 @include set(ratio, fourth);
 
-@function scale(
+@function size(
   $multiplier: normal,
   $root: $base-font-size,
   $ratio: get(ratio)
@@ -53,9 +53,9 @@
   $output: if($lines, (lines: $lines), ());
 
   @if type-of($size) == string {
-    $size: scale(get(scale $size));
+    $size: size(get(scale $size));
   } @else if type-of($size) == number and unitless($size) {
-    $size: scale($size)
+    $size: size($size)
   }
 
   $output: map-merge($output, (to_size: $size));
