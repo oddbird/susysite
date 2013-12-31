@@ -5,7 +5,7 @@ Sites Using Susy
 ================
 
 .. wrap:: div
-  :class: sitelist section
+  :class: sitelist
 
   - `Sass <http://sass-lang.com>`_
   - `Sass and Compass book <http://sassandcompass.com>`_

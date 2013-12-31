@@ -2,7 +2,7 @@
 // =================
 
 .contents {
-  @extend .section;
+  @extend %section;
 
   .topic-title { @extend %h2; }
 

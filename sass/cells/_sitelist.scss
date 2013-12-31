@@ -2,6 +2,8 @@
 // ================
 
 .sitelist {
+  @extend %section;
+
   ul { @include delimited-list; }
   ul {
     @include trailer;

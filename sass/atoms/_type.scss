@@ -15,10 +15,9 @@
     @include font-size(small);
   }
 
-  tt {
+  tt, code {
     display: inline-block;
-    padding: 0 rhythm(.25);
-    background-color: color(lightest $alt, .25);
+    color: color(darker);
   }
 
   pre {

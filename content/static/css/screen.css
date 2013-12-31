@@ -269,10 +269,9 @@ a:hover, a:focus, a:active {
   font-size: 0.88889rem;
   line-height: 1.38889rem;
 }
-[role="main"] tt {
+[role="main"] tt, [role="main"] code {
   display: inline-block;
-  padding: 0 0.34722rem;
-  background-color: rgba(255, 204, 229, 0.25);
+  color: #404040;
 }
 [role="main"] pre {
   overflow-x: auto;
@@ -537,7 +536,8 @@ a:hover, a:focus, a:active {
   display: block;
   clear: both;
 }
-[role="main"] > .section, [role="main"] > .contents {
+
+[role="main"] > section, .sitelist, .contents {
   padding-left: 0.52083rem;
   padding-right: 0.52083rem;
   border-top-width: 0.05556rem;

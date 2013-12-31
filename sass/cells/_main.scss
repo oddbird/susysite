@@ -34,11 +34,12 @@
 [role="main"] {
   @extend %type;
   @include container;
+  > section { @extend %section; }
+}
 
-  > .section {
-    @include gutters;
-    @include leading-border(1px, 2);
-    @include padding-trailer;
-    border-color: color(lightest);
-  }
+%section {
+  @include gutters;
+  @include leading-border(1px, 2);
+  @include padding-trailer;
+  border-color: color(lightest);
 }
