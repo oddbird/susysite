@@ -8,30 +8,30 @@ Featured Sites
 --------------
 
 .. wrap:: figure
-  :class: gallery
+  :class: gallery screenshots
 
   .. image:: /static/screenshots/sasslang.jpg
-    :alt: http://sass-lang.com
+    :alt: Sass
     :target: http://sass-lang.com
 
   .. image:: /static/screenshots/squaremarket.jpg
-    :alt: http://squareup.com/market
+    :alt: Square Market
     :target: http://squareup.com/market
 
   .. image:: /static/screenshots/slickbag.jpg
-    :alt: http://slickbag.se/
+    :alt: Slickbag
     :target: http://slickbag.se/
 
-  .. image:: /static/screenshots/avoidpaydayloans.jpg
-    :alt: http://avoidpaydayloans.com/
-    :target: http://avoidpaydayloans.com/
-
   .. image:: /static/screenshots/viggle.jpg
-    :alt: http://www.viggle.com/
+    :alt: Viggle
     :target: http://www.viggle.com/
 
+  .. image:: /static/screenshots/avoidpaydayloans.jpg
+    :alt: Avoid Payday Loans
+    :target: http://avoidpaydayloans.com/
+
   .. image:: /static/screenshots/turnitresponsive.jpg
-    :alt: http://turnitresponsive.com/
+    :alt: Turn It Responsive
     :target: http://turnitresponsive.com/
 
 Everyone

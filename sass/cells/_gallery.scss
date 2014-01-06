@@ -1,6 +1,8 @@
 // Gallery
 // =======
 
+$gallery-break: 35em;
+
 .gallery {
   @include susy-clearfix;
   @include trailer;
@@ -12,15 +14,21 @@
   }
 
   > a, > img {
-    @include gallery(5 of 10 after);
     @include trailer(.5);
     @include transition(all 200ms);
     @include box-shadow(0 0 size(xxxsmall) color(dark, .5));
+    display: block;
+    width: 100%;
 
     @include focus {
       @include box-shadow(0 0 size(xxxsmall) $accent);
       @include scale(1.05);
       z-index: 10;
+    }
+
+    @include breakpoint($gallery-break) {
+      @include span(5 of 10 after);
+      &:nth-child(even) { @include last(of 10 after); }
     }
   }
 }
