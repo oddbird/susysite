@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% block title %}{% if config.meta_title %}{{ config.meta_title }}{% else %}{{ rst.title }}{% endif %}{% endblock %}
+{% block title %}{% if config.meta_title %}{{ config.meta_title }}{% else %}{{ rst.title }} | {{ super() }}{% endif %}{% endblock %}
 
 {% block styles %}
   {{ super() }}

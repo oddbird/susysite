@@ -2,6 +2,15 @@
 // =======
 
 .gallery {
+  @include susy-clearfix;
+  @include trailer;
+
+  > [href^="http"] {
+    @include link {
+      &:before { display: none; }
+    }
+  }
+
   > a, > img {
     @include gallery(5 of 10 after);
     @include trailer(.5);
@@ -18,4 +27,6 @@
 
 .gallery-caption {
   @include break;
+  @include font-size(small);
+  font-style: italic;
 }

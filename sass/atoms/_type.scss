@@ -2,6 +2,22 @@
 // ====
 
 %body {
+  [href^="http"] {
+    @include link {
+      white-space: nowrap;
+      @include icon(external) {
+        @include font-size(xxsmall);
+        @include transition(opacity 200ms);
+        opacity: .25;
+        display: inline-block;
+        padding-right: .4em;
+      }
+    }
+    @include focus {
+      &:before { opacity: 1; }
+    }
+  }
+
   strong { font-weight: bold; }
   em, blockquote { font-style: italic; }
 
@@ -39,7 +55,10 @@
     ul, ol { margin-left: rhythm(1); }
   }
 
-  img { max-width: 100%; }
+  img {
+    max-width: 100%;
+    vertical-align: top;
+  }
 }
 
 %type {

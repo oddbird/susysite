@@ -27,3 +27,14 @@
     [data-icon='#{$name}']:before { content: $value; }
   }
 }
+
+@mixin icon(
+  $name,
+  $location: before
+) {
+  &:#{$location} {
+    @extend %icon;
+    content: get(icons $name);
+    @content;
+  }
+}

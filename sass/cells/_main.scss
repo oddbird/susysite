@@ -1,10 +1,13 @@
 // Main
 // ====
 
+$section-border: xxxsmall;
+$section-arrow-size: 1.5;
+
 @mixin section-arrow(
   $color,
-  $size: 1.5,
-  $border: xxxsmall
+  $size: $section-arrow-size,
+  $border: $section-border
 ) {
   $small: $size - .5;
 
@@ -34,12 +37,16 @@
 [role="main"] {
   @extend %type;
   @include container;
-  > section { @extend %section; }
+  > section {
+    @extend %section;
+
+    &:last-child { border-color: transparent; }
+  }
 }
 
 %section {
   @include gutters;
-  @include leading-border(1px, 2);
-  @include padding-trailer;
+  @include leader(2);
+  @include trailing-border(1px, 1);
   border-color: color(lightest);
 }

@@ -21,6 +21,9 @@ nav:
   - name: Documentation
     url: 'http://susydocs.oddbird.net/'
     icon: list
+  - name: Tutorials
+    url: '/demos/'
+    icon: direction
   - name: Support
     url: 'http://stackoverflow.com/questions/tagged/susy-compass'
     icon: stackoverflow

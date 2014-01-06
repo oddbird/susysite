@@ -1,7 +1,7 @@
 // Nav
 // ===
 
-$nav-medium: 30em;
+$nav-medium: 36em;
 
 [role="navigation"] {
   @include padding-leader(.5);
@@ -27,6 +27,11 @@ $nav-medium: 30em;
 [for="toggle-nav"] {
   @include span(last 2);
   text-align: right;
+
+  @include focus {
+    color: color(darkest);
+    cursor: pointer;
+  }
 
   @include breakpoint($nav-break) { display: none; }
 }
@@ -69,8 +74,12 @@ $nav-medium: 30em;
 
   [data-icon] { @include font-size(xsmall); }
   @include link { text-decoration: none; }
-  @include focus {
-    [data-icon]:before { content: get(icons external); }
+
+  &[href^='http://'] {
+    @include focus {
+      [data-icon]:before { content: get(icons external); }
+    }
   }
+
   @include breakpoint($nav-medium) { display: inline-block; }
 }

@@ -3,17 +3,18 @@
 
 .foot {
   @include section-arrow($accent);
+  @include trailing-border(size($section-border), 1);
   @include rhythm-padding(2, .5);
   background-color: color(lightest $accent);
 }
 
 [role="contentinfo"] {
   @include clearfix;
-  @include gutters;
   @include font-size(small);
 
   p { @include trailer; }
 
+  .credit, .colophon { @include gutters; }
   .credit { font-style: italic; }
   .license {
     font-style: normal;
@@ -25,7 +26,7 @@
   .foot { @include rhythm-padding(1, 0); }
   .credit, .colophon {
     @include span(6);
-    max-width: 25rem;
+    max-width: rhythm(19);
   }
   .colophon { @include last(no-gutters); }
 }

@@ -23,7 +23,10 @@
 }
 
 %link {
-  @include link { color: $alt; }
+  @include link {
+    @include transition(color 150ms);
+    color: $alt;
+  }
   @include focus { color: $accent; }
 }
 

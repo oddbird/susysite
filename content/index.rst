@@ -10,17 +10,15 @@ No Opinions
 -----------
 
 In a world of agile development
-and super-tablet-multi-magic-lap-phones,
+and super-tablet-multi-magic-laptop-phones,
 the best layouts can't be contained
-in a single framework, grid system, or technique.
-You can't build an entire house with a single hammer.
-You need a full belt,
-with tools that respond to all your needs.
-Susy combines all the common layout patterns
-into one flexible syntax,
-so each approach is available when you need it.
+in a single framework or technique.
+CSS Libraries are a bloated mess of opinions
+about how to do your job.
+Stop letting the table-saw tell you where to put the kitchen.
 
-*Stop letting the table-saw tell you where to put the kitchen.*
+*You draw the blueprints,
+we'll do the heavy lifting.*
 
 
 Rapid Prototypes, Rapid Production
@@ -29,9 +27,10 @@ Rapid Prototypes, Rapid Production
 We know that rapid prototypes
 are only the start to a long process
 of development, changes, handoffs, and maintanance.
+Susy is built for the long haul.
 
 Get started quickly
-with Susy's flexible ``span`` mixin:
+with the flexible ``span`` mixin:
 
 .. code-block:: scss
 
@@ -50,7 +49,8 @@ Then stick around for fully customizable grids:
     flow: rtl,
   );
 
-And take complete control when you need it:
+And take complete control of the math
+when you need it:
 
 .. code-block:: scss
 
@@ -101,8 +101,9 @@ In The Wild
     See more `sites using Susy`_,
     or `add your own`_ »
 
-.. _sites using Susy: /sites-using-susy/
+.. _sites using Susy: /sites-using-susy/#everyone
 .. _add your own: https://github.com/ericam/susysite/tree/master/content/sites-using-susy.rst
+
 
 Better Together
 ---------------
