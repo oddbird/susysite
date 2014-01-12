@@ -12,7 +12,11 @@ Featured Sites
 
   .. image:: /static/screenshots/sasslang.jpg
     :alt: Sass
-    :target: http://sass-lang.com
+    :target: http://sass-lang.com/
+
+  .. image:: /static/screenshots/smithsonian.jpg
+    :alt: Smithsonian
+    :target: http://smithsonian.com/
 
   .. image:: /static/screenshots/squaremarket.jpg
     :alt: Square Market
@@ -24,15 +28,12 @@ Featured Sites
 
   .. image:: /static/screenshots/viggle.jpg
     :alt: Viggle
-    :target: http://www.viggle.com/
+    :target: http://viggle.com/
 
   .. image:: /static/screenshots/avoidpaydayloans.jpg
     :alt: Avoid Payday Loans
     :target: http://avoidpaydayloans.com/
 
-  .. image:: /static/screenshots/turnitresponsive.jpg
-    :alt: Turn It Responsive
-    :target: http://turnitresponsive.com/
 
 Everyone
 --------
@@ -40,6 +41,7 @@ Everyone
 - `Sass <http://sass-lang.com>`_
 - `Sass and Compass book <http://sassandcompass.com>`_
 - `Square Market <https://squareup.com/market>`_
+- `Smithsonian <http://smithsonian.com/>`_
 - `Slickbag <http://slickbag.se>`_
 - `Renault TV <http://uk.renault.tv>`_
 - `Project Evolution <http://www.projectevolution.com>`_

@@ -1,0 +1,121 @@
+// SusyOne Grid Types
+// ==================
+
+@import "compass";
+@import "susyone";
+@import "breakpoint";
+
+@import "toolkit/maps";
+@import "toolkit";
+@import "settings";
+@import "atoms";
+
+
+// Setup
+// -----
+
+$grid-background-column-color: color(lightest $alt, .25);
+
+%section {
+  @include padding-leader(2);
+  @include trailing-border(1px, 1);
+  border-color: rgba(#666, .25);
+
+  &:last-child { border: 0; }
+}
+
+%demo-container {
+  @extend %section;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.content {
+  @extend %type;
+  padding: 0 1em;
+
+  h1 {
+    @extend %demo-container;
+    @include padding-leader(3);
+  }
+
+  #customizing-susy, #mixing-and-matching {
+    @extend %demo-container;
+  }
+}
+
+.demo {
+  @extend %code;
+  @include trailer;
+  @include box-shadow(0 0 .25em $base inset);
+  text-align: center;
+
+  h3 {
+    @include padding-leader(1);
+    font-weight: bold;
+  }
+  p {
+    @include font-size(small);
+    @include padding-trailer(1);
+    @include trailer(0);
+  }
+}
+
+@mixin demo(
+  $sel: 'demo'
+) {
+  .#{$sel} {
+    @include susy-grid-background;
+    @include bleed;
+  }
+}
+
+@mixin demo-section(
+  $sel: 'demo'
+) {
+  @extend %section;
+  @include container;
+  @include demo;
+
+  .#{$sel} {
+    @include susy-grid-background;
+    @include bleed;
+  }
+}
+
+// Magic Grid
+// ----------
+
+$total-columns: 10;
+$column-width: 4em;
+$gutter-width: 1em;
+$grid-padding: 1em;
+
+#the-magic-grid { @include demo-section; }
+
+// Fluid Grid
+// ----------
+
+$total-columns: 12;
+$column-width: 60px;
+$gutter-width: 20px;
+$grid-padding: 10px;
+
+$container-style: fluid;
+$container-width: 80%;
+
+#the-fluid-grid { @include demo-section; }
+
+// Static Grid
+// -----------
+
+$total-columns: 10;
+$column-width: 4em;
+$gutter-width: 1em;
+$grid-padding: 1em;
+
+$container-style: static;
+$container-width: false;
+
+#the-static-grid { @include demo-section; }
+

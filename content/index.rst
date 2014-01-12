@@ -15,19 +15,58 @@ the best layouts can't be contained
 in a single framework or technique.
 CSS Libraries are a bloated mess of opinions
 about how to do your job.
-Stop letting the table-saw tell you where to put the kitchen.
+Why is should table-saw tell you where to put the kitchen?
 
-*You draw the blueprints,
-we'll do the heavy lifting.*
+Your markup, your design, your opinions | *our math*.
 
 
-Rapid Prototypes, Rapid Production
-----------------------------------
+In The Wild
+-----------
+
+.. wrap:: figure
+  :class: gallery screenshots
+
+  .. image:: /static/screenshots/sasslang.jpg
+    :alt: Sass
+    :target: http://sass-lang.com/
+
+  .. image:: /static/screenshots/smithsonian.jpg
+    :alt: Smithsonian
+    :target: http://smithsonian.com/
+
+  .. image:: /static/screenshots/squaremarket.jpg
+    :alt: Square Market
+    :target: http://squareup.com/market
+
+  .. image:: /static/screenshots/slickbag.jpg
+    :alt: Slickbag
+    :target: http://slickbag.se/
+
+  .. image:: /static/screenshots/viggle.jpg
+    :alt: Viggle
+    :target: http://viggle.com/
+
+  .. image:: /static/screenshots/avoidpaydayloans.jpg
+    :alt: Avoid Payday Loans
+    :target: http://avoidpaydayloans.com/
+
+  .. wrap:: figcaption
+    :class: gallery-caption
+
+    See more `sites using Susy`_,
+    or `add your own`_ »
+
+.. _sites using Susy: /sites-using-susy/#everyone
+.. _add your own: https://github.com/ericam/susysite/tree/master/content/sites-using-susy.rst
+
+
+Rapid Prototypes, Enduring Production
+-------------------------------------
 
 We know that rapid prototypes
 are only the start to a long process
 of development, changes, handoffs, and maintanance.
-Susy is built for the long haul.
+Susy is built to evolve with your project for the long haul.
 
 Get started quickly
 with the flexible ``span`` mixin:
@@ -63,46 +102,6 @@ when you need it:
   main {
     @include span(isolate 9 at 4 no-gutters);
   }
-
-
-In The Wild
------------
-
-.. wrap:: figure
-  :class: gallery screenshots
-
-  .. image:: /static/screenshots/sasslang.jpg
-    :alt: Sass
-    :target: http://sass-lang.com
-
-  .. image:: /static/screenshots/squaremarket.jpg
-    :alt: Square Market
-    :target: http://squareup.com/market
-
-  .. image:: /static/screenshots/slickbag.jpg
-    :alt: Slickbag
-    :target: http://slickbag.se/
-
-  .. image:: /static/screenshots/viggle.jpg
-    :alt: Viggle
-    :target: http://www.viggle.com/
-
-  .. image:: /static/screenshots/avoidpaydayloans.jpg
-    :alt: Avoid Payday Loans
-    :target: http://avoidpaydayloans.com/
-
-  .. image:: /static/screenshots/turnitresponsive.jpg
-    :alt: Turn It Responsive
-    :target: http://turnitresponsive.com/
-
-  .. wrap:: figcaption
-    :class: gallery-caption
-
-    See more `sites using Susy`_,
-    or `add your own`_ »
-
-.. _sites using Susy: /sites-using-susy/#everyone
-.. _add your own: https://github.com/ericam/susysite/tree/master/content/sites-using-susy.rst
 
 
 Better Together

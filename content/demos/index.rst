@@ -9,8 +9,8 @@ Susy Two
 
 No 2.0 tutorials yet.
 
-See the full
-`documentation <http://susydocs.oddbird.net/>`_
+See the
+`full documentation <http://susydocs.oddbird.net/>`_
 for help `getting started <http://susydocs.oddbird.net/en/latest/install/>`_
 or `upgrading <http://susydocs.oddbird.net/en/latest/upgrade/>`_.
 

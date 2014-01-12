@@ -1,0 +1,8 @@
+// Content
+// =======
+
+.content {
+  @include break;
+  @include section-arrow($alt);
+  background: $bg-color;
+}

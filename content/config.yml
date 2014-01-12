@@ -13,7 +13,7 @@ modules:
 
 # Banner
 banner_title: Susy
-banner_url: 'http://susy.oddbird.net/'
+banner_url: '/'
 banner_tagline: 'your layout | <em>our math</em>'
 
 # Navigation

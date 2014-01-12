@@ -7,6 +7,7 @@ $gallery-break: 35em;
   @include susy-clearfix;
   @include trailer;
 
+  // don't show external-link icon
   > [href^="http"] {
     @include link {
       &:before { display: none; }
@@ -15,22 +16,26 @@ $gallery-break: 35em;
 
   > a, > img {
     @include trailer(.5);
-    @include transition(all 200ms);
     @include box-shadow(0 0 size(xxxsmall) color(dark, .5));
-    display: block;
-    width: 100%;
-
-    @include focus {
-      @include box-shadow(0 0 size(xxxsmall) $accent);
-      @include scale(1.05);
-      z-index: 10;
-    }
 
     @include breakpoint($gallery-break) {
       @include span(5 of 10 after);
       &:nth-child(even) { @include last(of 10 after); }
     }
   }
+
+  > a {
+    @include transition(all 150ms);
+    display: block;
+
+    @include focus {
+      @include box-shadow(0 0 size(xxxsmall) color(darker $accent));
+      @include scale(1.05);
+      z-index: 10;
+    }
+  }
+
+  img { width: 100%; }
 }
 
 .gallery-caption {

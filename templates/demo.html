@@ -1,13 +1,15 @@
-{% extends "base.html" %}
+{% extends "layout.html" %}
 
 {% block styles %}
   {% if config.styles %}
-    <link rel="stylesheet" href="/static/css/{{ config.styles }}">
+    <link rel="stylesheet" href="/static/css/demos/demos.css">
+    <link rel="stylesheet" href="/static/css/demos/{{ config.styles }}">
   {% else %}
     {{ super() }}
   {% endif %}
 {% endblock %}
 
-{% block layout %}
+{% block main %}
+  {{ rst.html_title }}
   {{ rst.fragment }}
 {% endblock %}

@@ -1,0 +1,11 @@
+// Section
+// =======
+
+%section {
+  @include susy-clearfix;
+  @include break;
+  @include gutters;
+  @include leader(2);
+  @include trailing-border(1px, 1);
+  border-color: color(lightest);
+}

@@ -1,39 +1,6 @@
 // Main
 // ====
 
-$section-border: xxxsmall;
-$section-arrow-size: 1.5;
-
-@mixin section-arrow(
-  $color,
-  $size: $section-arrow-size,
-  $border: $section-border
-) {
-  $small: $size - .5;
-
-  @include leading-border(size($border), $size + 2);
-  position: relative;
-  border-color: $color;
-
-  @include arrow(before down rhythm($size) $color) {
-    margin-left: rhythm(- $size);
-  }
-  @include arrow(after down rhythm($small) $bg-color) {
-    margin-left: rhythm(- $small);
-  }
-
-  &:before, &:after {
-    left: 50%;
-    top: - size($border);
-  }
-}
-
-.content {
-  @include break;
-  @include section-arrow($alt);
-  background: $bg-color;
-}
-
 [role="main"] {
   @extend %type;
   @include container;
@@ -42,11 +9,4 @@ $section-arrow-size: 1.5;
 
     &:last-child { border-color: transparent; }
   }
-}
-
-%section {
-  @include gutters;
-  @include leader(2);
-  @include trailing-border(1px, 1);
-  border-color: color(lightest);
 }

@@ -1,9 +1,11 @@
-// Map Toolkit
-// ===========
+// Maps
+// ====
+// - These features are part of Susy Next,
+//   but not part of Susy One.
 
 // Truncate List
 // -------------
-// Return a list, truncated to a given length
+// - Return a list, truncated to a given length
 @function truncate-list(
   $list,
   $length
@@ -17,9 +19,9 @@
   @return $return;
 }
 
-// Get Deep
+// Deep Get
 // --------
-// Return a value deep in nested maps
+// - Return a value deep in nested maps
 @function deep-get(
   $map,
   $keys...
@@ -29,17 +31,15 @@
   @each $key in $keys {
     @if type-of($return) == map {
       $return: map-get($return, $key);
-    } @else {
-      @warn "#{$return} is not a map for #{$key}.";
     }
   }
 
   @return $return;
 }
 
-// Set Deep
+// Deep Set
 // --------
-// Set a value deep in nested maps
+// - Set a value deep in nested maps
 @function deep-set(
   $map,
   $keys,
@@ -53,9 +53,36 @@
     $level: truncate-list($keys, $length + $n);
     $level: deep-get($map, $level...);
     $merge: (nth($keys, $n): $value);
-    $value: map-merge($level, $merge);
+    $value: if($level, map-merge($level, $merge), $merge);
     $return: $value;
   }
 
   @return $return;
 }
+
+// Deep Has-Key
+// ------------
+// - Return true if a deep key exists
+@function deep-has-key(
+  $map,
+  $keys...
+) {
+  $return: null;
+  $break: false;
+
+  @each $key in $keys {
+    @if not $break {
+      $return: map-has-key($map, $key);
+    }
+
+    @if $return {
+      $map: map-get($map, $key);
+    } @else {
+      $break: true;
+    }
+  }
+
+  @return $return;
+}
+
+
