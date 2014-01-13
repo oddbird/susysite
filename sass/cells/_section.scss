@@ -5,7 +5,7 @@
   @include susy-clearfix;
   @include break;
   @include gutters;
-  @include leader(2);
-  @include trailing-border(1px, 1);
+  @include leading-border(1px, 2);
+  @include trailer(2);
   border-color: color(lightest);
 }

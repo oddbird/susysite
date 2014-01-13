@@ -1,0 +1,63 @@
+// Release Info
+// ============
+
+.release-info {
+  @include trailer(2);
+
+  h2 {
+    @extend %a11y-hidden;
+    margin: 0;
+  }
+
+  + .intro {
+    @include padding-leader(0);
+    border: 0;
+  }
+}
+
+.version {
+  @include rhythm-padding(.25);
+  @include trailer(.5);
+  @include bleed-x(rhythm(4));
+  border-radius: rhythm(.25);
+  background: $accent;
+  color: white;
+  text-shadow: 0 1px 0 color(darker $accent, .5);
+
+  + .version {
+    @include bleed-x(rhythm(2));
+    background: color(lighter $accent);
+  }
+}
+
+.version-title { margin-right: rhythm(1); }
+
+.version-details {
+  display: inline-block;
+  [role='main'] & {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    display: inline-block;
+    margin-right: rhythm(1);
+  }
+  a {
+    @include link {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      &[href^='http']:before {
+        opacity: .5;
+        color: white;
+      }
+    }
+    @include focus {
+      text-decoration: underline;
+      &[href^='http']:before {
+        opacity: 1;
+      }
+    }
+  }
+}

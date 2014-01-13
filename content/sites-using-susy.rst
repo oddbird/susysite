@@ -1,38 +1,12 @@
 public: yes
+before:
+  - include: 'modules/_screenshots.html'
+    title: Featured Sites
+    id: featured-sites
 
 
 Sites Using Susy
 ================
-
-Featured Sites
---------------
-
-.. wrap:: figure
-  :class: gallery screenshots
-
-  .. image:: /static/screenshots/sasslang.jpg
-    :alt: Sass
-    :target: http://sass-lang.com/
-
-  .. image:: /static/screenshots/smithsonian.jpg
-    :alt: Smithsonian
-    :target: http://smithsonian.com/
-
-  .. image:: /static/screenshots/squaremarket.jpg
-    :alt: Square Market
-    :target: http://squareup.com/market
-
-  .. image:: /static/screenshots/slickbag.jpg
-    :alt: Slickbag
-    :target: http://slickbag.se/
-
-  .. image:: /static/screenshots/viggle.jpg
-    :alt: Viggle
-    :target: http://viggle.com/
-
-  .. image:: /static/screenshots/avoidpaydayloans.jpg
-    :alt: Avoid Payday Loans
-    :target: http://avoidpaydayloans.com/
 
 
 Everyone
@@ -78,6 +52,9 @@ Everyone
 - `Andrew Philip Clark <http://andrewphilipclark.com>`_
 - `Uncorked Studios <http://uncorkedstudios.com/>`_
 - `Vermont Brewers Association <http://www.vermontbrewers.com>`_
+
+Contribute A Site
+-----------------
 
 Add your own site `on Github`_!
 

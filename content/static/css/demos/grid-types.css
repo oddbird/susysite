@@ -213,21 +213,14 @@ html {
   -o-transition: all 200ms;
   -webkit-transition: all 200ms;
   transition: all 200ms;
-  border-bottom-width: 0.05556rem;
-  border-bottom-style: solid;
-  padding-bottom: 1.33333rem;
-  margin-bottom: 1.38889rem;
-  border-color: #e5e5e5;
+  padding-bottom: 1.38889rem;
   text-align: center;
 }
 @media (min-width: 30em) {
   .content h1 {
     font-size: 2.44444rem;
     line-height: 2.77778rem;
-    border-bottom-width: 0.05556rem;
-    border-bottom-style: solid;
-    padding-bottom: 2.72222rem;
-    margin-bottom: 2.77778rem;
+    padding-bottom: 2.77778rem;
   }
 }
 

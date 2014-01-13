@@ -6,7 +6,5 @@
   @include container;
   > section {
     @extend %section;
-
-    &:last-child { border-color: transparent; }
   }
 }

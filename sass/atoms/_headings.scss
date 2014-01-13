@@ -4,15 +4,12 @@
 %h1 {
   @include font-size(medium);
   @include transition(all 200ms);
-  @include trailing-border(1px, 1);
-  @include trailer;
-  border-color: color(lightest);
+  @include padding-trailer(1);
   text-align: center;
 
   @include breakpoint(30em) {
     @include font-size(xlarge);
-    @include trailing-border(1px, 2);
-    @include trailer(2);
+    @include padding-trailer(2);
   }
 }
 

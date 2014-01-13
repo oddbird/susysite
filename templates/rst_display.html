@@ -18,6 +18,14 @@
 
   {% include "_byline.html" %}
 
+  {% for module in config.before %}
+    {% include module.include %}
+  {% endfor %}
+
   {{ rst.fragment }}
+
+  {% for module in config.after %}
+    {% include module.include %}
+  {% endfor %}
 
 {% endblock %}

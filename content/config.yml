@@ -1,20 +1,21 @@
 ---
-active_modules: [pygments_simple, tags, blog, wrap, typogrify]
-author: Eric A. Meyer
-canonical_url: http://susy.oddbird.com/
-output_folder: ../output
-template_path: ../templates
-rst_writer: html5writer
-modules:
-  pygments:
-    style: borland
-  blog:
-    index_url: /blog/
-
 # Banner
 banner_title: Susy
 banner_url: '/'
 banner_tagline: 'your layout | <em>our math</em>'
+
+
+# Version
+versions:
+  - title: Current Release
+    number: 1.0.9
+    notes: 'https://github.com/ericam/susy/blob/master/CHANGELOG.mkdn'
+    code: 'https://github.com/ericam/susy/'
+  - title: Upcoming Release
+    gem: 'https://rubygems.org/gems/susy/versions/2.0.0.beta.3'
+    number: 2.0.0.beta.3
+    notes: 'http://susydocs.oddbird.net/en/latest/changelog/'
+
 
 # Navigation
 nav:
@@ -27,9 +28,56 @@ nav:
   - name: Support
     url: 'http://stackoverflow.com/questions/tagged/susy-compass'
     icon: stackoverflow
-  - name: Source
-    url: 'http://github.com/ericam/susy/'
-    icon: github
   - name: Twitter
     url: 'http://twitter.com/sasssusy/'
     icon: twitter
+
+
+# Intro
+intro:
+  - title: 'No Opinions'
+    id: no-opinions
+    text: 'In a world of agile development
+        and super-tablet-multi-magic-laptop-phones,
+        the best layouts can’t be contained
+        in a single framework or technique.
+        CSS Libraries are a bloated mess of opinions
+        about how to do your job.
+        Why is should table-saw tell you where to put the kitchen?'
+    tagline: 'Your markup, your design, your opinions | <em>our math</em>.'
+
+
+# Screenshots
+screenshots:
+  - image: /static/screenshots/sasslang.jpg
+    alt: Sass
+    target: http://sass-lang.com/
+  - image: /static/screenshots/smithsonian.jpg
+    alt: Smithsonian
+    target: http://smithsonian.com/
+  - image: /static/screenshots/squaremarket.jpg
+    alt: Square Market
+    target: http://squareup.com/market
+  - image: /static/screenshots/slickbag.jpg
+    alt: Slickbag
+    target: http://slickbag.se/
+  - image: /static/screenshots/viggle.jpg
+    alt: Viggle
+    target: http://viggle.com/
+  - image: /static/screenshots/avoidpaydayloans.jpg
+    alt: Avoid Payday Loans
+    target: http://avoidpaydayloans.com/
+
+
+# Settings
+active_modules: [pygments_simple, tags, blog, wrap, typogrify]
+author: Eric A. Meyer
+canonical_url: http://susy.oddbird.com/
+output_folder: ../output
+template_path: ../templates
+rst_writer: html5writer
+modules:
+  pygments:
+    style: borland
+  blog:
+    index_url: /blog/

@@ -1,0 +1,23 @@
+<aside id="release-info" class="release-info">
+  <h2>Versions</h2>
+  {% for version in config.versions %}
+    <div class="version">
+      <b class="version-title">{{ version.title }}:</b>
+      <ul class="version-details">
+        <li class="version-number">
+          <a href="{{ version.gem|default('https://rubygems.org/gems/susy') }}">{{ version.number }}</a>
+        </li>
+        {% if version.notes %}
+        <li class="version-notes">
+          <a href="{{ version.notes }}">Release Notes</a>
+        </li>
+        {% endif %}
+        {% if version.code %}
+        <li class="version-code">
+          <a href="{{ version.code }}">Fork on GitHub</a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+  {% endfor %}
+</aside>

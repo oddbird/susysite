@@ -1,0 +1,17 @@
+<section id="{{ module.id|default('sites-using-susy') }}">
+  <h2>{{ module.title|default('Sites Using Susy') }}</h2>
+  <figure class="gallery screenshots">
+    {% for shot in config.screenshots %}
+      <a href="{{ shot.target }}" data-title="{{ shot.alt }}">
+        <img src="{{ shot.image }}" alt="{{ shot.alt }}" />
+      </a>
+    {% endfor %}
+
+    {% if module.more %}
+      <figcaption class="gallery-caption">
+        See more <a href="/sites-using-susy/#everyone">sites using Susy</a>,
+        or <a href="https://github.com/ericam/susysite/tree/master/content/sites-using-susy.rst">add your own</a> »
+      </figcaption>
+    {% endif %}
+  </figure>
+</section>
