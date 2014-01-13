@@ -16,7 +16,24 @@ Power tools for the web
 Rapid Prototypes, Built to Scale
 --------------------------------
 
-*These instructions are for the upcoming Susy 2.0 release*
+|note|
+
+.. |note| raw:: html
+
+  <em>
+  These instructions are for the upcoming Susy 2.0 release,
+  which is feature-complete,
+  but requires the pre-release version of Sass.
+  The full
+  <a href="http://susydocs.oddbird.net/en/latest/susyone/">Susy One documentation</a>
+  is still available,
+  along with
+  <a href="http://susydocs.oddbird.net/en/latest/upgrade/">upgrade instructions</a>,
+  and <a href="/demos/">tutorials</a>.
+  In fact,
+  the entire Susy One syntax is available as a language option
+  in the Susy Two gem.
+  </em>
 
 We know that rapid prototypes
 are only the start to a long process

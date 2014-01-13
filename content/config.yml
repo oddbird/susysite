@@ -11,7 +11,7 @@ versions:
     number: 1.0.9
     notes: 'https://github.com/ericam/susy/blob/master/CHANGELOG.mkdn'
     code: 'https://github.com/ericam/susy/'
-  - title: Upcoming Release
+  - title: Beta Release
     gem: 'https://rubygems.org/gems/susy/versions/2.0.0.beta.3'
     number: 2.0.0.beta.3
     notes: 'http://susydocs.oddbird.net/en/latest/changelog/'
