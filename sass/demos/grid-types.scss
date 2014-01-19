@@ -1,6 +1,8 @@
 // SusyOne Grid Types
 // ==================
 
+@import "compass/reset";
+
 @import "compass";
 @import "susyone";
 @import "breakpoint";
@@ -8,7 +10,7 @@
 @import "toolkit/maps";
 @import "toolkit";
 @import "settings";
-@import "atoms";
+@import "base";
 
 
 // Setup

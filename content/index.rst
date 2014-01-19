@@ -40,7 +40,7 @@ are only the start to a long process
 of development, changes, handoffs, and maintanance.
 Susy is built to evolve with your project for the long haul.
 
-Get started quickly
+`Get started`_ quickly
 with the flexible ``span`` mixin:
 
 .. code-block:: scss
@@ -74,6 +74,8 @@ when you need it:
   main {
     @include span(isolate 9 at 4 no-gutters);
   }
+
+.. _Get started: http://susydocs.oddbird.net/en/latest/install/
 
 
 Better Together
