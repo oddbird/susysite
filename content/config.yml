@@ -12,8 +12,8 @@ versions:
     notes: 'https://github.com/ericam/susy/blob/master/CHANGELOG.mkdn'
     code: 'https://github.com/ericam/susy/'
   - title: Beta Release
-    gem: 'https://rubygems.org/gems/susy/versions/2.0.0.beta.3'
-    number: 2.0.0.beta.3
+    gem: 'https://rubygems.org/gems/susy/versions/2.0.0.rc.1'
+    number: 2.0.0.rc.1
     notes: 'http://susydocs.oddbird.net/en/latest/changelog/'
 
 
@@ -50,23 +50,73 @@ intro:
 # Screenshots
 screenshots:
   - image: /static/screenshots/sasslang.jpg
-    alt: Sass
+    alt: 'Sass'
     target: http://sass-lang.com/
   - image: /static/screenshots/smithsonian.jpg
-    alt: Smithsonian
+    alt: 'Smithsonian'
     target: http://smithsonian.com/
   - image: /static/screenshots/squaremarket.jpg
-    alt: Square Market
+    alt: 'Square Market'
     target: http://squareup.com/market
   - image: /static/screenshots/slickbag.jpg
-    alt: Slickbag
+    alt: 'Slickbag'
     target: http://slickbag.se/
   - image: /static/screenshots/viggle.jpg
-    alt: Viggle
+    alt: 'Viggle'
     target: http://viggle.com/
   - image: /static/screenshots/avoidpaydayloans.jpg
-    alt: Avoid Payday Loans
+    alt: 'Avoid Payday Loans'
     target: http://avoidpaydayloans.com/
+
+
+# Credits
+credit:
+  - name: 'Tsachi Schlidor'
+    url: http://twitter.com/shlidor
+  - name: 'Aaron Gray'
+    url: http://twitter.com/mragray
+  - name: 'Jina Bolton'
+    url: http://twitter.com/jina
+  - name: 'Danny Palmer'
+    url: http://twitter.com/dannyprose
+  - name: 'Rachel Nabors'
+    url: http://twitter.com/rachelnabors
+  - name: 'Sam Richard'
+    url: http://twitter.com/snugug
+  - name: 'Scott Kellum'
+    url: http://twitter.com/scottkellum
+  - name: 'Mason Wendell'
+    url: http://twitter.com/codingdesigner
+  - name: 'many&nbsp;others'
+    url: https://github.com/ericam/susy/graphs/contributors
+
+
+# Colophon
+colophon:
+  - name: 'GitHub'
+    url: https://github.com/ericam/susysite
+  - name: 'rstBlog'
+    url: http://github.com/mitsuhiko/rstblog/
+  - name: 'Python'
+    url: http://www.python.org/
+  - name: 'Jinja'
+    url: http://jinja.pocoo.org/
+  - name: 'Compass'
+    url: http://compass-style.org/
+  - name: 'Sass'
+    url: http://sass-lang.com
+  - name: 'Susy'
+    url: http://susy.oddbird.net
+  - name: 'Breakpoint'
+    url: http://breakpoint-sass.com
+  - name: 'Pygments'
+    url: http://pygments.org/
+  - name: 'IcoMoon'
+    url: http://icomoon.io
+  - name: 'Source Sans Pro'
+    url: https://github.com/adobe/source-sans-pro
+  - name: 'Source&nbsp;Code&nbsp;Pro'
+    url: https://github.com/adobe/source-code-pro
 
 
 # Settings

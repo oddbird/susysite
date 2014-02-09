@@ -6,6 +6,7 @@ $grid-background-baseline-color: rgba(black, .125);
 @include fonts;
 @include establish-baseline;
 @include border-box-sizing;
+@include icon-placeholder(susy);
 
 html {
   @extend %sans;
@@ -14,4 +15,4 @@ html {
   color: $text-color;
 }
 
-@include icons;
+@include data-icons;

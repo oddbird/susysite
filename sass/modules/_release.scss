@@ -5,7 +5,7 @@
   @include trailer(2);
 
   h2 {
-    @extend %a11y-hidden;
+    @extend %is-hidden;
     margin: 0;
   }
 

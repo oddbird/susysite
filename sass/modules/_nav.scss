@@ -3,6 +3,11 @@
 
 $nav-medium: 36em;
 
+@mixin toggle {
+  @extend %is-hidden;
+  &:checked { @content }
+}
+
 [role="navigation"] {
   @include padding-leader(.5);
 

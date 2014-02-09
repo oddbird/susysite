@@ -70,3 +70,7 @@
   @extend %amp;
   font-style: normal !important;
 }
+
+.is-hidden {
+  @extend %is-hidden;
+}

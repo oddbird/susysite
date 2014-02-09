@@ -55,21 +55,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-[data-icon], .content [href^="http"]:link:before, .content [href^="http"]:visited:before {
-  font-family: 'susy';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  text-decoration: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.a11y-hidden {
+.is-hidden {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -160,14 +146,27 @@ html {
   box-sizing: border-box;
 }
 
+[data-icon], .content [href^="http"]:link::before, .content [href^="http"]:visited::before {
+  font-family: susy;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-decoration: none;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-icon]::before {
+  content: attr(data-icon);
+}
+
 html {
   padding-top: 0.69444rem;
   background: white;
   color: #666666;
-}
-
-[data-icon]:before {
-  content: attr(data-icon);
 }
 
 [data-icon='github']:before {
@@ -262,7 +261,7 @@ a:hover, a:focus, a:active {
 .content [href^="http"]:link, .content [href^="http"]:visited {
   white-space: nowrap;
 }
-.content [href^="http"]:link:before, .content [href^="http"]:visited:before {
+.content [href^="http"]:link::before, .content [href^="http"]:visited::before {
   content: "\e319";
   font-size: 0.66667rem;
   line-height: 1.38889rem;
@@ -439,8 +438,8 @@ a:hover, a:focus, a:active {
 #the-fluid-grid {
   *zoom: 1;
   width: 80%;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0.55556rem;
+  padding-right: 0.55556rem;
   margin-left: auto;
   margin-right: auto;
 }

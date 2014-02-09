@@ -9,7 +9,7 @@
 @function link(
   $selector: link
 ) {
-  @return get(link-selectors $selector);
+  @return get(link-selectors, $selector);
 }
 
 @mixin link(

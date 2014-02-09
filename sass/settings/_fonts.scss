@@ -1,21 +1,46 @@
 // Font Settings
 // =============
 
+
+@function sans-path($value) { @return 'sans/sourcesanspro-#{$value}-webfont'; }
+@function code-path($value) { @return 'code/sourcecodepro-#{$value}-webfont'; }
+
+@function font-styles($group, $styles...) {
+  $_return: ();
+  $_value: null;
+
+  @each $style in $styles {
+    @if length($style) == 2 {
+      $_value: nth($style, 1) + nth($style, 2);
+    } @else {
+      $_value: $style;
+    }
+
+    @if $group == sans {
+      $_value: sans-path($_value);
+    } @else if $group == code {
+      $_value: code-path($_value);
+    }
+
+    $_return: map-merge($_return, ($style: $_value));
+  }
+
+  @return $_return;
+}
+
+
+// Fonts
+// -----
+
 $fonts: (
+
   sans: (
     name: SourceSansPro,
     type: sans-serif,
     stack: (
       "Helvetica Neue", Helvetica, Arial,
     ),
-    files: (
-      normal: 'sans/sourcesanspro-regular-webfont',
-      bold: 'sans/sourcesanspro-bold-webfont',
-      light: 'sans/sourcesanspro-light-webfont',
-      italic: 'sans/sourcesanspro-italic-webfont',
-      bold italic: 'sans/sourcesanspro-bolditalic-webfont',
-      light italic: 'sans/sourcesanspro-lightitalic-webfont',
-    ),
+    files: font-styles(sans, regular, bold, light, italic, bold italic, light italic),
   ),
 
   code: (
@@ -25,10 +50,7 @@ $fonts: (
       Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono",
       "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New",
     ),
-    files: (
-      normal: 'code/sourcecodepro-regular-webfont',
-      bold: 'code/sourcecodepro-bold-webfont',
-    ),
+    files: font-styles(code, regular, bold),
   ),
 
   amp: (
@@ -37,15 +59,14 @@ $fonts: (
     stack: (
       Baskerville, Palatino, Cambria, Georgia,
     ),
-    files: (
-      normal: 'amp/Baskerville-amp-webfont',
-    ),
+    files: (regular: 'amp/Baskerville-amp-webfont'),
   ),
 
   susy: (
     name: susy,
-    files: (
-      normal: 'icons/susy',
-    ),
+    files: (regular: 'icons/susy'),
   ),
+
 );
+
+@include set(fonts, $fonts);

@@ -2,28 +2,25 @@
 // ========
 
 $section-border: xxxsmall;
-$section-arrow-size: 1.5;
+$section-arrow-size: 1;
 
 @mixin section-arrow(
   $color,
   $size: $section-arrow-size,
   $border: $section-border
 ) {
-  $small: $size - .5;
-
   @include leading-border(size($border), $size + 2);
   position: relative;
   border-color: $color;
 
-  @include arrow(before down rhythm($size) $color) {
-    margin-left: rhythm(- $size);
+  @include arrow(rhythm($size) down $bg-color, after, $root: null) {
+    margin-top: - size($border);
   }
-  @include arrow(after down rhythm($small) $bg-color) {
-    margin-left: rhythm(- $small);
-  }
+  @include arrow(rhythm($size) down $color, before, $root: null);
 
-  &:before, &:after {
+  &::before, &::after {
+    top: 0;
     left: 50%;
-    top: - size($border);
+    margin-left: rhythm(- ($size));
   }
 }
