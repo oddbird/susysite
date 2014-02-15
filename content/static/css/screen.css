@@ -774,32 +774,39 @@ a:hover, a:focus, a:active {
   *zoom: 1;
 }
 
-.screenshots > a {
+.screenshots .site-link {
+  background: no-repeat scroll top right;
+  -moz-background-size: 130% auto;
+  -o-background-size: 130% auto;
+  -webkit-background-size: 130% auto;
+  background-size: 130% auto;
+  -moz-transition: all 150ms ease-in;
+  -o-transition: all 150ms ease-in;
+  -webkit-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
   overflow: hidden;
   position: relative;
   height: 0;
   padding-bottom: 59.8%;
 }
-.screenshots > a img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  -moz-transition: all 100ms ease-in;
-  -o-transition: all 100ms ease-in;
-  -webkit-transition: all 100ms ease-in;
-  transition: all 100ms ease-in;
-  -moz-transform-origin: 100% 0;
-  -ms-transform-origin: 100% 0;
-  -o-transform-origin: 100% 0;
-  -webkit-transform-origin: 100% 0;
-  transform-origin: 100% 0;
-  -moz-transform: scale3d(1.3, 1.3, 0);
-  -webkit-transform: scale3d(1.3, 1.3, 0);
-  transform: scale3d(1.3, 1.3, 0);
+.screenshots .site-link:hover, .screenshots .site-link:focus, .screenshots .site-link:active {
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  -webkit-background-size: 100%;
+  background-size: 100%;
 }
-.screenshots > a:after {
+.screenshots .site-link:hover .site-name, .screenshots .site-link:focus .site-name, .screenshots .site-link:active .site-name {
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+@media (min-width: 35em) {
+  .screenshots .site-link {
+    padding-bottom: 29.2898%;
+  }
+}
+.screenshots .site-name {
   position: absolute;
   top: -2px;
   bottom: -2px;
@@ -814,6 +821,9 @@ a:hover, a:focus, a:active {
   transform: translate3d(102%, 0, 0);
   font-size: 0.77778rem;
   line-height: 1.38889rem;
+  -moz-box-shadow: 0 0 0.34722rem rgba(102, 102, 102, 0.5);
+  -webkit-box-shadow: 0 0 0.34722rem rgba(102, 102, 102, 0.5);
+  box-shadow: 0 0 0.34722rem rgba(102, 102, 102, 0.5);
   content: attr(data-title);
   overflow: hidden;
   opacity: 0;
@@ -824,24 +834,6 @@ a:hover, a:focus, a:active {
   color: white;
   text-transform: uppercase;
   text-align: center;
-}
-.screenshots > a:hover img, .screenshots > a:focus img, .screenshots > a:active img {
-  -moz-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
-  -o-transform: scale(1, 1);
-  -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);
-}
-.screenshots > a:hover:after, .screenshots > a:focus:after, .screenshots > a:active:after {
-  -moz-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  opacity: 1;
-}
-@media (min-width: 35em) {
-  .screenshots > a {
-    padding-bottom: 29.2898%;
-  }
 }
 
 @media (min-width: 35em) {

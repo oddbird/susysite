@@ -9,7 +9,7 @@
     {% for item in config.news %}
     {% if loop.index < 6 %}
     <li class="news-item">
-      <cite class="ni-source">{{ item.source }}</cite>
+      <strong class="ni-source">{{ item.source }}</strong>
       <span class="ni-type">[{{ item.type }}]</span> —
       <a href="{{ item.url }}" class="ni-title">{{ item.title }}</a>
     </li>
