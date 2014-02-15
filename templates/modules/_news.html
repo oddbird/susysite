@@ -1,0 +1,20 @@
+<section id="{{ module.id|default('news') }}">
+  <h2>{{ module.title|default('News') }}</h2>
+
+  {% set more=true %}
+  {% include "modules/_screenshots_gallery.html" %}
+
+  {% if config.news %}
+  <ul class="news-list">
+    {% for item in config.news %}
+    {% if loop.index < 6 %}
+    <li class="news-item">
+      <cite class="ni-source">{{ item.source }}</cite>
+      <span class="ni-type">[{{ item.type }}]</span> —
+      <a href="{{ item.url }}" class="ni-title">{{ item.title }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+  {% endif %}
+</section>

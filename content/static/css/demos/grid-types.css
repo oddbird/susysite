@@ -146,7 +146,7 @@ html {
   box-sizing: border-box;
 }
 
-[data-icon], .content [href^="http"]:link::before, .content [href^="http"]:visited::before {
+[data-icon] {
   font-family: susy;
   speak: none;
   font-style: normal;
@@ -258,24 +258,6 @@ a:hover, a:focus, a:active {
   color: deepskyblue;
 }
 
-.content [href^="http"]:link, .content [href^="http"]:visited {
-  white-space: nowrap;
-}
-.content [href^="http"]:link::before, .content [href^="http"]:visited::before {
-  content: "\e319";
-  font-size: 0.66667rem;
-  line-height: 1.38889rem;
-  -moz-transition: opacity 200ms;
-  -o-transition: opacity 200ms;
-  -webkit-transition: opacity 200ms;
-  transition: opacity 200ms;
-  opacity: .25;
-  display: inline-block;
-  padding-right: .4em;
-}
-.content [href^="http"]:hover:before, .content [href^="http"]:focus:before, .content [href^="http"]:active:before {
-  opacity: 1;
-}
 .content strong {
   font-weight: bold;
 }

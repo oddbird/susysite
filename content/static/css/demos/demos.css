@@ -311,6 +311,9 @@ a:hover, a:focus, a:active {
 [data-nav]:link, [data-nav]:visited {
   text-decoration: none;
 }
+[data-nav][href^='http://']:hover [data-icon]:before, [data-nav][href^='http://']:focus [data-icon]:before, [data-nav][href^='http://']:active [data-icon]:before {
+  content: "\e319";
+}
 @media (min-width: 36em) {
   [data-nav] {
     display: inline-block;

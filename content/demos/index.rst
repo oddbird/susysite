@@ -4,6 +4,7 @@ public: yes
 Tutorials
 =========
 
+
 Susy Two
 --------
 
@@ -14,13 +15,18 @@ See the
 for help `getting started <http://susydocs.oddbird.net/en/latest/install/>`_
 or `upgrading <http://susydocs.oddbird.net/en/latest/upgrade/>`_.
 
+
 Susy One
 --------
 
 - `Different grid types <grid-types>`_
 - `Mobile-first "magic" grids <magic>`_
-- `Off-Canvas layout with Susy <http://oddbird.net/2012/11/27/susy-off-canvas/>`_
-- `Nettuts: Responsive Grids With Susy <http://net.tutsplus.com/tutorials/html-css-techniques/responsive-grids-with-susy/>`_
+- **lynda.com** [video]:
+  `Adding Susy for responsive grids <http://www.lynda.com/CSS-tutorials/Adding-Susy-responsive-grids/140777/153470-4.html>`_
+- **zell-weekeat.com** [tutorial]: `A Complete Tutorial to Susy <http://www.zell-weekeat.com/a-complete-tutorial-to-susy/>`_
+- **oddbird.net** [demo]: `Off-Canvas layout with Susy <http://oddbird.net/2012/11/27/susy-off-canvas/>`_
+- **Nettuts+** [tutorial]: `Responsive Grids With Susy <http://net.tutsplus.com/tutorials/html-css-techniques/responsive-grids-with-susy/>`_
+
 
 Contribute
 ----------

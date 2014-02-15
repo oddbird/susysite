@@ -155,7 +155,7 @@ html {
   box-sizing: border-box;
 }
 
-[data-icon], [role="main"] [href^="http"]:link::before, [role="main"] [href^="http"]:visited::before {
+[data-icon] {
   font-family: susy;
   speak: none;
   font-style: normal;
@@ -267,24 +267,6 @@ a:hover, a:focus, a:active {
   color: deepskyblue;
 }
 
-[role="main"] [href^="http"]:link, [role="main"] [href^="http"]:visited {
-  white-space: nowrap;
-}
-[role="main"] [href^="http"]:link::before, [role="main"] [href^="http"]:visited::before {
-  content: "\e319";
-  font-size: 0.66667rem;
-  line-height: 1.38889rem;
-  -moz-transition: opacity 200ms;
-  -o-transition: opacity 200ms;
-  -webkit-transition: opacity 200ms;
-  transition: opacity 200ms;
-  opacity: .25;
-  display: inline-block;
-  padding-right: .4em;
-}
-[role="main"] [href^="http"]:hover:before, [role="main"] [href^="http"]:focus:before, [role="main"] [href^="http"]:active:before {
-  opacity: 1;
-}
 [role="main"] strong {
   font-weight: bold;
 }
@@ -344,6 +326,25 @@ a:hover, a:focus, a:active {
   font-style: normal !important;
 }
 
+[class*="callout"] {
+  display: block;
+  padding: 0.69444rem;
+  border-left: 0.34722rem solid #e5e5e5;
+  background: rgba(229, 229, 229, 0.5);
+  font-style: italic;
+}
+[class*="callout"] strong {
+  font-style: normal;
+}
+[class*="callout"][class*="--note"] {
+  border-left-color: #ccf2ff;
+  background: rgba(204, 242, 255, 0.25);
+}
+[class*="callout"][class*="--warning"] {
+  border-left-color: #ffcccc;
+  background: rgba(255, 204, 204, 0.25);
+}
+
 [role="main"] > section, .contents {
   clear: both;
   padding-left: 0.52083rem;
@@ -367,9 +368,6 @@ a:hover, a:focus, a:active {
   content: " ";
   display: block;
   clear: both;
-}
-.gallery > [href^="http"]:link:before, .gallery > [href^="http"]:visited:before {
-  display: none;
 }
 .gallery > a, .gallery > img {
   margin-bottom: 0.69444rem;
@@ -558,6 +556,9 @@ a:hover, a:focus, a:active {
 }
 [data-nav]:link, [data-nav]:visited {
   text-decoration: none;
+}
+[data-nav][href^='http://']:hover [data-icon]:before, [data-nav][href^='http://']:focus [data-icon]:before, [data-nav][href^='http://']:active [data-icon]:before {
+  content: "\e319";
 }
 @media (min-width: 36em) {
   [data-nav] {

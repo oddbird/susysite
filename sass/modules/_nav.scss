@@ -82,7 +82,7 @@ $nav-medium: 36em;
 
   &[href^='http://'] {
     @include focus {
-      [data-icon]:before { content: get(icons external); }
+      [data-icon]:before { content: get(icons, external); }
     }
   }
 

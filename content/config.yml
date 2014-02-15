@@ -7,44 +7,38 @@ banner_tagline: 'your layout | <em>our math</em>'
 
 # Version
 versions:
-  - title: Current Release
+  - title: Stable Release
     number: 1.0.9
     notes: 'https://github.com/ericam/susy/blob/master/CHANGELOG.mkdn'
     code: 'https://github.com/ericam/susy/'
-  - title: Beta Release
+  - title: Release Candidate
     gem: 'https://rubygems.org/gems/susy/versions/2.0.0.rc.1'
     number: 2.0.0.rc.1
     notes: 'http://susydocs.oddbird.net/en/latest/changelog/'
 
 
-# Navigation
-nav:
-  - name: Documentation
-    url: 'http://susydocs.oddbird.net/'
-    icon: list
-  - name: Tutorials
-    url: '/demos/'
-    icon: direction
-  - name: Support
-    url: 'http://stackoverflow.com/questions/tagged/susy-compass'
-    icon: stackoverflow
-  - name: Twitter
-    url: 'http://twitter.com/sasssusy/'
-    icon: twitter
-
-
-# Intro
-intro:
-  - title: 'No Opinions'
-    id: no-opinions
-    text: 'In a world of agile development
-        and super-tablet-multi-magic-laptop-phones,
-        the best layouts can’t be contained
-        in a single framework or technique.
-        CSS Libraries are a bloated mess of opinions
-        about how to do your job.
-        Why is should table-saw tell you where to put the kitchen?'
-    tagline: 'Your markup, your design, your opinions | <em>our math</em>.'
+# News
+news:
+  - title: 'Adding Susy for responsive grids'
+    source: 'lynda.com'
+    url: 'http://www.lynda.com/CSS-tutorials/Adding-Susy-responsive-grids/140777/153470-4.html'
+    type: 'video'
+  - title: 'A Complete Tutorial to Susy'
+    source: 'zell-weekeat.com'
+    url: 'http://www.zell-weekeat.com/a-complete-tutorial-to-susy/'
+    type: 'tutorial'
+  - title: 'Rapidfire 23'
+    source: 'Shop Talk Show'
+    url: 'http://shoptalkshow.com/episodes/102-rapidfire-23/#t=47:02'
+    type: 'podcast'
+  - title: 'It’s Alive: Prototyping in the Browser'
+    source: 'Happy Cog'
+    url: 'http://cognition.happycog.com/article/its-alive-prototyping-in-the-browser'
+    type: 'blog'
+  - title: 'Responsive Grids With Susy'
+    source: 'Nettuts+'
+    url: 'http://net.tutsplus.com/tutorials/html-css-techniques/responsive-grids-with-susy/'
+    type: 'tutorial'
 
 
 # Screenshots
@@ -61,12 +55,35 @@ screenshots:
   - image: /static/screenshots/slickbag.jpg
     alt: 'Slickbag'
     target: http://slickbag.se/
-  - image: /static/screenshots/viggle.jpg
-    alt: 'Viggle'
-    target: http://viggle.com/
-  - image: /static/screenshots/avoidpaydayloans.jpg
-    alt: 'Avoid Payday Loans'
-    target: http://avoidpaydayloans.com/
+
+
+# Intro
+intro:
+  - title: 'Your markup, your design, your opinions | <em>our math</em>.'
+    id: no-opinions
+    text: 'In a world of agile development
+        and super-tablet-multi-magic-laptop-phones,
+        the best layouts can’t be contained
+        in a single framework or technique.
+        CSS Libraries are a bloated mess of opinions
+        about how to do your job.
+        Why let the table-saw tell you where to put the kitchen?'
+
+
+# Navigation
+nav:
+  - name: Documentation
+    url: 'http://susydocs.oddbird.net/'
+    icon: list
+  - name: Tutorials
+    url: '/demos/'
+    icon: direction
+  - name: Support
+    url: 'http://stackoverflow.com/questions/tagged/susy-compass'
+    icon: stackoverflow
+  - name: Twitter
+    url: 'http://twitter.com/sasssusy/'
+    icon: twitter
 
 
 # Credits
@@ -121,8 +138,8 @@ colophon:
 
 # Settings
 active_modules: [pygments_simple, tags, blog, wrap, typogrify]
-author: Eric A. Meyer
-canonical_url: http://susy.oddbird.com/
+author: Eric Meyer
+canonical_url: http://susy.oddbird.net/
 output_folder: ../output
 template_path: ../templates
 rst_writer: html5writer

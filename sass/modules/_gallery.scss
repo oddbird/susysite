@@ -7,13 +7,6 @@ $gallery-break: 35em;
   @include susy-clearfix;
   @include trailer;
 
-  // don't show external-link icon
-  > [href^="http"] {
-    @include link {
-      &:before { display: none; }
-    }
-  }
-
   > a, > img {
     @include trailer(.5);
     @include box-shadow(0 0 size(xxxsmall) color(dark, .5));

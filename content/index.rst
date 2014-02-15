@@ -3,10 +3,9 @@ meta_title: Susy
 before:
   - include: 'modules/_release.html'
   - include: 'modules/_intro.html'
-  - include: 'modules/_screenshots.html'
+  - include: 'modules/_news.html'
     title: In The Wild
     id: in-the-wild
-    more: true
 
 
 Power tools for the web
@@ -20,22 +19,20 @@ Rapid Prototypes, Built to Scale
 
 .. |note| raw:: html
 
-  <em>
-  These instructions are for the upcoming Susy 2.0 release,
-  which is feature-complete,
-  but requires the pre-release version of Sass.
-  The full
-  <a href="http://susydocs.oddbird.net/en/latest/susyone/">Susy One documentation</a>
-  is still available,
-  along with
-  <a href="http://susydocs.oddbird.net/en/latest/upgrade/">upgrade instructions</a>,
-  and <a href="/demos/">tutorials</a>.
-  In fact,
-  the entire Susy One syntax is available as a language option
-  in the Susy Two gem.
-  </em>
+  <span class="callout--note">
+    <strong>Note:</strong>
+    These instructions are for Susy 2.0,
+    which is internally stable,
+    but requires the pre-release version of Sass.
+    The
+    <a href="http://susydocs.oddbird.net/en/latest/susyone/">Susy One documentation</a>
+    is still available,
+    along with
+    <a href="http://susydocs.oddbird.net/en/latest/upgrade/">upgrade instructions</a>,
+    and <a href="/demos/">tutorials</a>.
+  </span>
 
-We know that rapid prototypes
+Rapid prototypes
 are only the start to a long process
 of development, changes, handoffs, and maintanance.
 Susy is built to evolve with your project for the long haul.
@@ -83,54 +80,38 @@ Better Together
 
 *Responsive Design* —
 Susy integrates smoothly with `Breakpoint`_
-with powerul media-query controls
-for responsive layouts.
+for powerul media-query controls.
 See the `documentation`_ for details.
 
 *Vertical Rhythms* —
-If you're using the `Compass`_
-vertical rhythms module,
-we give you controls to show/hide your basline
-along with any Susy grids you've defined.
+If you're using the `Compass`_,
+we add support for ``$rem-with-px-fallback``,
+and show your baseline grids for debugging.
 
 *Package Managers* —
 We love `Compass`_ and highly recommend it,
 but you can use Susy anywhere `Sass`_ is compiled.
-Susy plays well with `Bundler`_, `Bower`_/`Yeoman`_, and `Bourbon`_,
-or copied into your sass directory.
+Try it with `Bundler`_, `Bower`_, `Yeoman`_, `Bourbon`_,
+or copied directly into your project.
+Then check out `Sache.in`_ for more great Sass extensions.
+
+*Community Effort* —
+Susy was originaly based on Natalie Downe's `CSS Systems`_,
+but has grown much more powerful and flexible than any one system.
+Now we've joined forces with `Salsa`_,
+and borrowed from `Singularity`_, `Zen Grids`_, and elsewhere.
+We'd love to `hear your ideas`_ as well.
 
 .. _Breakpoint: http://breakpoint-sass.com
+.. _documentation: http://susydocs.oddbird.net/
 .. _Compass: http://compass-style.org/
 .. _Sass: http://sass-lang.com/
 .. _Bundler: http://bundler.io/
 .. _Bower: http://bower.io/
 .. _Yeoman: http://yeoman.io/
 .. _Bourbon: http://bourbon.io/
-.. _documentation: http://susydocs.oddbird.net/
-
-
-Community Effort
-----------------
-
-Susy was originaly based on Natalie Downe's `CSS Systems`_,
-and then pushed and proded by the community
-to become something larger.
-Along the way,
-projects have split off
-with their own interesting ideas.
-We hope to keep that conversation going.
-
-For Susy 2.0,
-we merged with the `Salsa`_ project,
-and borrowed additional ideas from
-`Singularity`_, `Zen Grids`_, and elsewhere,
-to create a more flexible layout language,
-with all the tools in one belt.
-We'd love to `hear your ideas`_ as well.
-Questions, suggestions, pull requests,
-and plugins are always welcome.
-
-.. _CSS Systems:
+.. _`Sache.in`: http://sache.in/
+.. _CSS Systems: http://www.slideshare.net/nataliedowne/css-systems-presentation
 .. _Salsa: http://tsi.github.io/Salsa/
 .. _Singularity: http://singularity.gs/
 .. _Zen Grids: http://next.zengrids.com/

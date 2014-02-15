@@ -1,0 +1,22 @@
+// Callouts
+// ========
+
+[class*="callout"] {
+  display: block;
+  padding: rhythm(.5);
+  border-left: rhythm(.25) solid color(lightest);
+  background: color(lightest, .5);
+  font-style: italic;
+
+  strong { font-style: normal; }
+
+  &[class*="--note"] {
+    border-left-color: color(lightest $blue);
+    background: color(lightest $blue, .25);
+  }
+
+  &[class*="--warning"] {
+    border-left-color: color(lightest $red);
+    background: color(lightest $red, .25);
+  }
+}
