@@ -21,15 +21,13 @@ Rapid Prototypes, Built to Scale
 
   <span class="callout--note">
     <strong>Note:</strong>
-    These instructions are for Susy 2.0,
-    which is internally stable,
-    but requires the pre-release version of Sass.
+    These instructions are for Susy 2,
+    which requires the pre-release version of Sass.
     The
-    <a href="http://susydocs.oddbird.net/en/latest/susyone/">Susy One documentation</a>
+    <a href="http://susydocs.oddbird.net/en/latest/susyone/">SusyOne documentation</a>
     is still available,
     along with
-    <a href="http://susydocs.oddbird.net/en/latest/upgrade/">upgrade instructions</a>,
-    and <a href="/demos/">tutorials</a>.
+    <a href="http://susydocs.oddbird.net/en/latest/upgrade/">upgrade instructions</a>.
   </span>
 
 Rapid prototypes
@@ -90,7 +88,7 @@ and show your baseline grids for debugging.
 
 *Package Managers* —
 We love `Compass`_ and highly recommend it,
-but you can use Susy anywhere `Sass`_ is compiled.
+but you can use Susy 2 anywhere `Sass`_ is compiled.
 Try it with `Bundler`_, `Bower`_, `Yeoman`_, `Bourbon`_,
 or copied directly into your project.
 Then check out `Sache.in`_ for more great Sass extensions.
@@ -98,8 +96,8 @@ Then check out `Sache.in`_ for more great Sass extensions.
 *Community Effort* —
 Susy was originaly based on Natalie Downe's `CSS Systems`_,
 but has grown much more powerful and flexible than any one system.
-Now we've joined forces with `Salsa`_,
-and borrowed from `Singularity`_, `Zen Grids`_, and elsewhere.
+For Susy 2 we joined forces with `Salsa`_,
+and borrowed back from `Singularity`_, `Zen Grids`_, and elsewhere.
 We'd love to `hear your ideas`_ as well.
 
 .. _Breakpoint: http://breakpoint-sass.com

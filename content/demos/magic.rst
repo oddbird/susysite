@@ -9,8 +9,7 @@ Mobile-First Magic Grids
 Fluid + Elastic == Magic
 ------------------------
 
-My favorite of the Susy One options is
-what I call the Magic Grid.
+Susy One was built around the idea of "Magic Grids".
 Fluid on the inside and elastic on the outside,
 the magic grid responds to both font and window size
 while keeping you in control of typographic line lengths.

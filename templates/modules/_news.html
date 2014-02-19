@@ -5,6 +5,7 @@
   {% include "modules/_screenshots_gallery.html" %}
 
   {% if config.news %}
+  <h3 class="news-title">Articles & Tutorials</h3>
   <ul class="news-list">
     {% for item in config.news %}
     {% if loop.index < 6 %}

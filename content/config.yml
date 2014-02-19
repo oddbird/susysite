@@ -27,10 +27,6 @@ news:
     source: 'zell-weekeat.com'
     url: 'http://www.zell-weekeat.com/a-complete-tutorial-to-susy/'
     type: 'tutorial'
-  - title: 'Rapidfire 23'
-    source: 'Shop Talk Show'
-    url: 'http://shoptalkshow.com/episodes/102-rapidfire-23/#t=47:02'
-    type: 'podcast'
   - title: 'It’s Alive: Prototyping in the Browser'
     source: 'Happy Cog'
     url: 'http://cognition.happycog.com/article/its-alive-prototyping-in-the-browser'
@@ -39,6 +35,10 @@ news:
     source: 'Nettuts+'
     url: 'http://net.tutsplus.com/tutorials/html-css-techniques/responsive-grids-with-susy/'
     type: 'tutorial'
+  - title: 'Rapidfire 23'
+    source: 'Shop Talk Show'
+    url: 'http://shoptalkshow.com/episodes/102-rapidfire-23/#t=47:02'
+    type: 'podcast'
 
 
 # Screenshots
@@ -138,7 +138,8 @@ colophon:
 
 # Settings
 active_modules: [pygments_simple, tags, blog, wrap, typogrify]
-author: Eric Meyer
+author: Eric
+site_author: Eric Suzanne Meyer
 canonical_url: http://susy.oddbird.net/
 output_folder: ../output
 template_path: ../templates
