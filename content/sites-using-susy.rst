@@ -52,6 +52,7 @@ Everyone
 - `Andrew Philip Clark <http://andrewphilipclark.com>`_
 - `Uncorked Studios <http://uncorkedstudios.com/>`_
 - `Vermont Brewers Association <http://www.vermontbrewers.com>`_
+- `Wilson Fletcher <http://www.wilsonfletcher.com>`_
 
 Contribute A Site
 -----------------
