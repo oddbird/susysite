@@ -2,7 +2,7 @@
 // ============
 
 .release-info {
-  @include trailer(2);
+  @include trailer(1);
 
   h2 {
     @extend %is-hidden;
@@ -18,16 +18,13 @@
 .version {
   @include rhythm-padding(.25);
   @include trailer(.5);
-  @include bleed-x(rhythm(4));
+  @include gutters;
   border-radius: rhythm(.25);
-  background: $accent;
+  background: color(dark $accent);
   color: white;
   text-shadow: 0 1px 0 color(darker $accent, .5);
 
-  + .version {
-    @include bleed-x(rhythm(2));
-    background: color(lighter $accent);
-  }
+  + .version { background: color(light $accent); }
 }
 
 .version-title { margin-right: rhythm(1); }

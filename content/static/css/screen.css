@@ -700,7 +700,7 @@ a:hover, a:focus, a:active {
 }
 
 .release-info {
-  margin-bottom: 2.77778rem;
+  margin-bottom: 1.38889rem;
 }
 .release-info h2 {
   margin: 0;
@@ -714,27 +714,15 @@ a:hover, a:focus, a:active {
   padding-top: 0.34722rem;
   padding-bottom: 0.34722rem;
   margin-bottom: 0.69444rem;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-  margin-right: -5.55556rem;
-  margin-left: -5.55556rem;
-  padding-right: 6.07639rem;
-  padding-left: 6.07639rem;
+  padding-left: 0.52083rem;
+  padding-right: 0.52083rem;
   border-radius: 0.34722rem;
-  background: deepskyblue;
+  background: #0098cc;
   color: white;
   text-shadow: 0 1px 0 rgba(0, 95, 127, 0.5);
 }
 .version + .version {
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-  margin-right: -2.77778rem;
-  margin-left: -2.77778rem;
-  padding-right: 3.29861rem;
-  padding-left: 3.29861rem;
-  background: #7fdfff;
+  background: #33cbff;
 }
 
 .version-title {
