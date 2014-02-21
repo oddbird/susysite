@@ -16,11 +16,14 @@ $section-arrow-size: 1;
   @include arrow(rhythm($size) down $bg-color, after, $root: null) {
     margin-top: - size($border);
   }
-  @include arrow(rhythm($size) down $color, before, $root: null);
+  @include arrow(rhythm($size + .125) down $color, before, $root: null);
 
   &::before, &::after {
     top: 0;
     left: 50%;
     margin-left: rhythm(- ($size));
+  }
+  &::before {
+    margin-left: rhythm(- ($size + .125))
   }
 }

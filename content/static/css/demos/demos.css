@@ -336,14 +336,17 @@ a:hover, a:focus, a:active {
   margin-top: -9px;
 }
 .content::before {
-  border-top: 1.38889rem solid #ff0080;
-  border-left-width: 1.38889rem;
-  border-right-width: 1.38889rem;
+  border-top: 1.5625rem solid #ff0080;
+  border-left-width: 1.5625rem;
+  border-right-width: 1.5625rem;
 }
 .content::before, .content::after {
   top: 0;
   left: 50%;
   margin-left: -1.38889rem;
+}
+.content::before {
+  margin-left: -1.5625rem;
 }
 
 .foot {
@@ -366,14 +369,17 @@ a:hover, a:focus, a:active {
   margin-top: -9px;
 }
 .foot::before {
-  border-top: 1.38889rem solid deepskyblue;
-  border-left-width: 1.38889rem;
-  border-right-width: 1.38889rem;
+  border-top: 1.5625rem solid deepskyblue;
+  border-left-width: 1.5625rem;
+  border-right-width: 1.5625rem;
 }
 .foot::before, .foot::after {
   top: 0;
   left: 50%;
   margin-left: -1.38889rem;
+}
+.foot::before {
+  margin-left: -1.5625rem;
 }
 
 [role="contentinfo"] {
