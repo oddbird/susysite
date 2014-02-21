@@ -79,7 +79,7 @@ nav:
     url: '/demos/'
     icon: direction
   - name: Support
-    url: 'http://stackoverflow.com/questions/tagged/susy-compass'
+    url: 'http://stackoverflow.com/questions/tagged/susy-sass'
     icon: stackoverflow
   - name: Twitter
     url: 'http://twitter.com/sasssusy/'
