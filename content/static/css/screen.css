@@ -726,7 +726,7 @@ a:hover, a:focus, a:active {
 }
 
 .version-title {
-  margin-right: 1.38889rem;
+  margin-right: 0.69444rem;
 }
 
 .version-details {
@@ -739,7 +739,7 @@ a:hover, a:focus, a:active {
 .version-details li {
   list-style: none;
   display: inline-block;
-  margin-right: 1.38889rem;
+  margin-right: 0.69444rem;
 }
 .version-details a:link, .version-details a:visited {
   color: white;

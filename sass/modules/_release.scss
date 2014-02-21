@@ -27,7 +27,7 @@
   + .version { background: color(light $accent); }
 }
 
-.version-title { margin-right: rhythm(1); }
+.version-title { margin-right: rhythm(.5); }
 
 .version-details {
   display: inline-block;
@@ -38,7 +38,7 @@
   li {
     list-style: none;
     display: inline-block;
-    margin-right: rhythm(1);
+    margin-right: rhythm(.5);
   }
   a {
     @include link {
