@@ -10,8 +10,7 @@ $grid-background-baseline-color: rgba(black, .125);
 
 html {
   @extend %sans;
-  @include padding-leader(.5);
-  background: $bg-color;
+  background: color(lightest $accent);
   color: $text-color;
 }
 

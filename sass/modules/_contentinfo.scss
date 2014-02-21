@@ -3,9 +3,7 @@
 
 .foot {
   @include section-arrow($accent);
-  @include trailing-border(size($section-border), 1);
   @include rhythm-padding(2, .5);
-  background-color: color(lightest $accent);
 }
 
 [role="contentinfo"] {

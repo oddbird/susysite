@@ -3,6 +3,11 @@
 
 $nav-break: 55em;
 
+.head {
+  @include padding-leader(.5);
+  background: $bg-color;
+}
+
 [rel="home"] {
   @include link {
     @include gutters;

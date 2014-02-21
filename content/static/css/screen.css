@@ -173,8 +173,7 @@ html {
 }
 
 html {
-  padding-top: 0.69444rem;
-  background: white;
+  background: #ccf2ff;
   color: #666666;
 }
 
@@ -415,6 +414,11 @@ a:hover, a:focus, a:active {
   font-style: italic;
 }
 
+.head {
+  padding-top: 0.69444rem;
+  background: white;
+}
+
 [rel="home"]:link, [rel="home"]:visited {
   padding-left: 0.52083rem;
   padding-right: 0.52083rem;
@@ -573,6 +577,7 @@ a:hover, a:focus, a:active {
   padding-top: 3.66667rem;
   position: relative;
   border-color: #ff0080;
+  padding-bottom: 2.77778rem;
   background: white;
 }
 .content::after {
@@ -612,12 +617,8 @@ a:hover, a:focus, a:active {
   padding-top: 3.66667rem;
   position: relative;
   border-color: deepskyblue;
-  border-bottom-width: 0.5rem;
-  border-bottom-style: solid;
-  padding-bottom: 0.88889rem;
   padding-top: 2.77778rem;
   padding-bottom: 0.69444rem;
-  background-color: #ccf2ff;
 }
 .foot::after {
   border-top: 1.38889rem solid white;

@@ -4,5 +4,6 @@
 .content {
   @include break;
   @include section-arrow($alt);
+  @include padding-trailer(2);
   background: $bg-color;
 }
