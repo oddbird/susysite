@@ -4,6 +4,10 @@ banner_title: Susy
 banner_url: '/'
 banner_tagline: 'your layout | <em>our math</em>'
 
+# Author
+site_author: Eric Suzanne
+site_author_url: http://twitter.com/ericmsuzanne
+
 
 # Version
 versions:
@@ -139,7 +143,6 @@ colophon:
 # Settings
 active_modules: [pygments_simple, tags, blog, wrap, typogrify]
 author: Eric
-site_author: Eric Suzanne Meyer
 canonical_url: http://susy.oddbird.net/
 output_folder: ../output
 template_path: ../templates
