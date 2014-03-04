@@ -53,6 +53,7 @@ Everyone
 - `Uncorked Studios <http://uncorkedstudios.com/>`_
 - `Vermont Brewers Association <http://www.vermontbrewers.com>`_
 - `Wilson Fletcher <http://www.wilsonfletcher.com>`_
+- `Ecran Cassé <http://ecrancasse.com>`_
 
 Contribute A Site
 -----------------
