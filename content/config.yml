@@ -11,15 +11,11 @@ site_author_url: http://twitter.com/ericmsuzanne
 
 # Version
 versions:
-  - title: Stable Release
-    number: 1.0.9
-    notes: 'https://github.com/ericam/susy/blob/master/CHANGELOG.mkdn'
-    code: 'https://github.com/ericam/susy/'
-  - title: Release Candidate
-    gem: 'https://rubygems.org/gems/susy/versions/2.0.0.rc.1'
-    number: 2.0.0.rc.1
+  - title: Version
+    number: 2.0.0
     notes: 'http://susydocs.oddbird.net/en/latest/changelog/'
-
+    upgrade: 'http://susydocs.oddbird.net/en/latest/upgrade/'
+    code: 'https://github.com/ericam/susy/'
 
 # News
 news:

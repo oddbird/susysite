@@ -15,21 +15,6 @@ Power tools for the web
 Rapid Prototypes, Built to Scale
 --------------------------------
 
-|note|
-
-.. |note| raw:: html
-
-  <span class="callout--note">
-    <strong>Note:</strong>
-    These instructions are for Susy 2,
-    which requires the pre-release version of Sass.
-    The
-    <a href="http://susydocs.oddbird.net/en/latest/susyone/">SusyOne documentation</a>
-    is still available,
-    along with
-    <a href="http://susydocs.oddbird.net/en/latest/upgrade/">upgrade instructions</a>.
-  </span>
-
 Rapid prototypes
 are only the start to a long process
 of development, changes, handoffs, and maintanance.

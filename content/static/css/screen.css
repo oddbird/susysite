@@ -155,7 +155,7 @@ html {
   box-sizing: border-box;
 }
 
-[data-icon] {
+[data-icon], .version-details [href^='http']::before, .version-details [href*="github"]::before, .version-details [href*="susydocs"]::before {
   font-family: susy;
   speak: none;
   font-style: normal;
@@ -716,6 +716,13 @@ a:hover, a:focus, a:active {
   padding-top: 0rem;
   border: 0;
 }
+.release-info a:link, .release-info a:visited {
+  color: white;
+  text-decoration: none;
+}
+.release-info a:hover, .release-info a:focus, .release-info a:active {
+  text-decoration: underline;
+}
 
 .version {
   padding-top: 0.34722rem;
@@ -727,12 +734,14 @@ a:hover, a:focus, a:active {
   background: #0098cc;
   color: white;
   text-shadow: 0 1px 0 rgba(0, 95, 127, 0.5);
+  text-align: center;
 }
 .version + .version {
   background: #33cbff;
 }
 
 .version-title {
+  font-weight: bold;
   margin-right: 0.69444rem;
 }
 
@@ -748,20 +757,17 @@ a:hover, a:focus, a:active {
   display: inline-block;
   margin-right: 0.69444rem;
 }
-.version-details a:link, .version-details a:visited {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
+.version-details [href^='http']::before {
+  content: "\e319";
+  font-size: 0.66667rem;
+  line-height: 1.38889rem;
+  margin-right: .4em;
 }
-.version-details a:link[href^='http']:before, .version-details a:visited[href^='http']:before {
-  opacity: .5;
-  color: white;
+.version-details [href*="github"]::before {
+  content: "\e600";
 }
-.version-details a:hover, .version-details a:focus, .version-details a:active {
-  text-decoration: underline;
-}
-.version-details a:hover[href^='http']:before, .version-details a:focus[href^='http']:before, .version-details a:active[href^='http']:before {
-  opacity: 1;
+.version-details [href*="susydocs"]::before {
+  content: "\e603";
 }
 
 .head {

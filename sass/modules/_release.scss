@@ -13,6 +13,16 @@
     @include padding-leader(0);
     border: 0;
   }
+
+  a {
+    @include link {
+      color: white;
+      text-decoration: none;
+    }
+    @include focus {
+      text-decoration: underline;
+    }
+  }
 }
 
 .version {
@@ -23,11 +33,15 @@
   background: color(dark $accent);
   color: white;
   text-shadow: 0 1px 0 color(darker $accent, .5);
+  text-align: center;
 
   + .version { background: color(light $accent); }
 }
 
-.version-title { margin-right: rhythm(.5); }
+.version-title {
+  font-weight: bold;
+  margin-right: rhythm(.5);
+}
 
 .version-details {
   display: inline-block;
@@ -40,21 +54,13 @@
     display: inline-block;
     margin-right: rhythm(.5);
   }
-  a {
-    @include link {
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-      &[href^='http']:before {
-        opacity: .5;
-        color: white;
-      }
-    }
-    @include focus {
-      text-decoration: underline;
-      &[href^='http']:before {
-        opacity: 1;
-      }
+
+  [href^='http'] {
+    @include icon('external') {
+      @include font-size(xxsmall);
+      margin-right: .4em;
     }
   }
+  [href*="github"] { @include icon('github'); }
+  [href*="susydocs"] { @include icon('list'); }
 }

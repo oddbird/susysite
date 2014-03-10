@@ -2,19 +2,24 @@
   <h2>Versions</h2>
   {% for version in config.versions %}
     <div class="version">
-      <b class="version-title">{{ version.title }}:</b>
+      <strong class="version-title">
+        {{ version.title }}
+        <a href="{{ version.gem|default('https://rubygems.org/gems/susy') }}">{{ version.number }}</a>:
+      </strong>
       <ul class="version-details">
-        <li class="version-number">
-          <a href="{{ version.gem|default('https://rubygems.org/gems/susy') }}">{{ version.number }}</a>
-        </li>
         {% if version.notes %}
         <li class="version-notes">
-          <a href="{{ version.notes }}">Release Notes</a>
+          <a href="{{ version.notes }}">Changes</a>
+        </li>
+        {% endif %}
+        {% if version.upgrade %}
+        <li class="version-upgrade">
+          <a href="{{ version.upgrade }}">Upgrade Path</a>
         </li>
         {% endif %}
         {% if version.code %}
         <li class="version-code">
-          <a href="{{ version.code }}">Fork on GitHub</a>
+          <a href="{{ version.code }}">Code</a>
         </li>
         {% endif %}
       </ul>
