@@ -63,7 +63,7 @@ Better Together
 
 *Responsive Design* —
 Susy integrates smoothly with `Breakpoint`_
-for powerul media-query controls.
+for powerful media-query controls.
 See the `documentation`_ for details.
 
 *Vertical Rhythms* —
