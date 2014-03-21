@@ -4,6 +4,7 @@ banner_title: Susy
 banner_url: '/'
 banner_tagline: 'your layout | <em>our math</em>'
 
+
 # Author
 site_author: Eric Suzanne
 site_author_url: http://twitter.com/ericmsuzanne
@@ -16,6 +17,7 @@ versions:
     notes: 'http://susydocs.oddbird.net/en/latest/changelog/'
     upgrade: 'http://susydocs.oddbird.net/en/latest/upgrade/'
     code: 'https://github.com/ericam/susy/'
+
 
 # News
 news:
@@ -46,16 +48,21 @@ screenshots:
   - image: /static/screenshots/sasslang.jpg
     alt: 'Sass'
     target: http://sass-lang.com/
-  - image: /static/screenshots/smithsonian.jpg
-    alt: 'Smithsonian'
-    target: http://smithsonian.com/
+  - image: /static/screenshots/simple.jpg
+    alt: 'Simple'
+    target: http://simple.com/
   - image: /static/screenshots/squaremarket.jpg
     alt: 'Square Market'
     target: http://squareup.com/market
+  - image: /static/screenshots/smithsonian.jpg
+    alt: 'Smithsonian'
+    target: http://smithsonian.com/
   - image: /static/screenshots/slickbag.jpg
     alt: 'Slickbag'
     target: http://slickbag.se/
-
+  - image: /static/screenshots/avoidpaydayloans.jpg
+    alt: 'Avoid Payday Loans'
+    target: http://avoidpaydayloans.com
 
 # Intro
 intro:

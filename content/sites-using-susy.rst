@@ -15,8 +15,10 @@ Everyone
 - `Sass <http://sass-lang.com>`_
 - `Sass and Compass book <http://sassandcompass.com>`_
 - `Square Market <https://squareup.com/market>`_
+- `Simple <http://simple.com>`_
 - `Smithsonian <http://smithsonian.com/>`_
 - `Slickbag <http://slickbag.se>`_
+- `Avoid Payday Loans <http://avoidpaydayloans.com>`_
 - `Renault TV <http://uk.renault.tv>`_
 - `Project Evolution <http://www.projectevolution.com>`_
 - `Ready Lets <http://www.readylets.co.uk>`_
@@ -36,7 +38,6 @@ Everyone
 - `Matthew Balaam <http://www.matthewbalaam.co.uk>`_
 - `Starrt <http://starrt.dk>`_
 - `Jeremy Peters <http://jeremypeters.co.uk>`_
-- `Avoid Payday Loans <http://avoidpaydayloans.com>`_
 - `Fake Images Please <http://fakeimg.pl>`_
 - `Viggle <http://www.viggle.com>`_
 - `Studio Daniel Libeskind <http://daniel-libeskind.com>`_
