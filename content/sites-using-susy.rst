@@ -55,6 +55,7 @@ Everyone
 - `Vermont Brewers Association <http://www.vermontbrewers.com>`_
 - `Wilson Fletcher <http://www.wilsonfletcher.com>`_
 - `Ecran Cassé <http://ecrancasse.com>`_
+- `Dumpling Magazine <http://www.dumplingmag.com>`_
 
 Contribute A Site
 -----------------
