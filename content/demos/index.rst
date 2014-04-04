@@ -31,6 +31,8 @@ Susy One
   `Off-Canvas layout with Susy <http://oddbird.net/2012/11/27/susy-off-canvas/>`_
 - **Nettuts+** [tutorial]:
   `Responsive Grids With Susy <http://net.tutsplus.com/tutorials/html-css-techniques/responsive-grids-with-susy/>`_
+- **Sass and Compass for Designers** [Book Chapter]:
+  `Responsive and Flexible Grids with Sass and Compass <http://sassandcompass.com>`_
 
 
 Contribute
