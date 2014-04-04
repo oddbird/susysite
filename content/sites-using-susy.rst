@@ -56,6 +56,7 @@ Everyone
 - `Wilson Fletcher <http://www.wilsonfletcher.com>`_
 - `Ecran Cassé <http://ecrancasse.com>`_
 - `Dumpling Magazine <http://www.dumplingmag.com>`_
+- `Unicorn Art Lounge <http://www.unicorn-art-lounge.de>`_
 
 Contribute A Site
 -----------------
