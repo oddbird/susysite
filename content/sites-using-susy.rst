@@ -58,6 +58,7 @@ Everyone
 - `Dumpling Magazine <http://www.dumplingmag.com>`_
 - `Unicorn Art Lounge <http://www.unicorn-art-lounge.de>`_
 - `Josiah Morgan <http://www.josiahmorgan.com>`_
+- `Nord Restaurant <http://www.nordrestaurant.co.uk/>`_
 
 Contribute A Site
 -----------------
