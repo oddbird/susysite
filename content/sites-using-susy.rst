@@ -60,6 +60,8 @@ Everyone
 - `Josiah Morgan <http://www.josiahmorgan.com>`_
 - `Nord Restaurant <http://www.nordrestaurant.co.uk/>`_
 - `Christina Lauer <http://christinalauer.net>`_
+- `Western New Mexico University <http://wnmu.edu>`_
+
 
 Contribute A Site
 -----------------
