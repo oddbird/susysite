@@ -3,6 +3,7 @@ meta_title: Susy
 before:
   - include: 'modules/_release.html'
   - include: 'modules/_intro.html'
+  - include: 'modules/_quotes.html'
   - include: 'modules/_news.html'
     title: In The Wild
     id: in-the-wild

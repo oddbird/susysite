@@ -269,10 +269,10 @@ a:hover, a:focus, a:active {
 [role="main"] strong {
   font-weight: bold;
 }
-[role="main"] em, [role="main"] blockquote {
+[role="main"] em {
   font-style: italic;
 }
-[role="main"] p, [role="main"] ul, [role="main"] ol, [role="main"] pre, [role="main"] blockquote {
+[role="main"] p, [role="main"] ul, [role="main"] ol, [role="main"] pre {
   margin-bottom: 1.38889rem;
 }
 [role="main"] p:empty {
@@ -299,11 +299,9 @@ a:hover, a:focus, a:active {
   background: #fcfcfc;
 }
 [role="main"] blockquote {
+  margin-bottom: 2.77778rem;
   padding: 0 1.04167rem;
-  border-left: 0.34722rem solid;
-}
-[role="main"] blockquote em {
-  font-style: normal;
+  border-left: #e5e5e5 0.34722rem solid;
 }
 [role="main"] ul, [role="main"] ol, [role="main"] blockquote {
   margin-left: 1.38889rem;
@@ -319,6 +317,39 @@ a:hover, a:focus, a:active {
 [role="main"] img {
   max-width: 100%;
   vertical-align: top;
+}
+[role="main"] .video {
+  position: relative;
+  height: 0;
+  padding-top: 56.25%;
+  width: 100%;
+  border: 1px solid #bfbfbf;
+}
+[role="main"] .video > * {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+[role="main"] .quote-body {
+  font-size: 2.44444rem;
+  line-height: 2.77778rem;
+  margin-bottom: 0.69444rem;
+}
+[role="main"] .quote-body::before, [role="main"] .quote-body::after {
+  content: "“";
+}
+[role="main"] .quote-body::after {
+  content: "”";
+}
+[role="main"] .quote-source {
+  font-size: 0.88889rem;
+  line-height: 1.38889rem;
+  font-style: italic;
 }
 
 .amp {
@@ -398,7 +429,6 @@ a:hover, a:focus, a:active {
   box-shadow: 0 0 9px #005f7f;
   -moz-transform: scale(1.05, 1.05);
   -ms-transform: scale(1.05, 1.05);
-  -o-transform: scale(1.05, 1.05);
   -webkit-transform: scale(1.05, 1.05);
   transform: scale(1.05, 1.05);
   z-index: 10;

@@ -1,0 +1,12 @@
+{% for item in config.news %}
+{% if item.quote %}
+  <blockquote class="feature-quote">
+    <p class="quote-body">{{ item.quote }}</p>
+    {% set author='%s, ' % item.author if item.author and item.source else '' %}
+    <cite class="quote-source">
+      — {{ author }}<a href="{{ item.url }}">{{ item.source }}</a>
+    </cite>
+  </blockquote>
+{% endif %}
+{% endfor %}
+

@@ -1,21 +1,30 @@
 <section id="{{ module.id|default('news') }}">
-  <h2>{{ module.title|default('News') }}</h2>
+  <h2 class="section-title">{{ module.title|default('News') }}</h2>
 
   {% set more=true %}
   {% include "modules/_screenshots_gallery.html" %}
 
   {% if config.news %}
-  <h3 class="news-title">Articles & Tutorials</h3>
-  <ul class="news-list">
-    {% for item in config.news %}
-    {% if loop.index < 6 %}
-    <li class="news-item">
-      <strong class="ni-source">{{ item.source }}</strong>
-      <span class="ni-type">[{{ item.type }}]</span> —
-      <a href="{{ item.url }}" class="ni-title">{{ item.title }}</a>
-    </li>
-    {% endif %}
-    {% endfor %}
-  </ul>
+
+  {% for feature in config.news|groupby('feature') %}
+  {% if feature.grouper %}
+    <h3 class="news-title">Recent News</h3>
+    <ul class="news-list">
+      {% for item in feature.list %}
+      <li class="news-item">
+        <strong>
+          <a href="{{ item.url }}" class="ni-title">{{ item.title }}</a>
+        </strong>
+        <span class="ni-type">[{{ item.type }}]</span> —
+        {% if item.author %}
+          <span class="ni-author">{{ item.author }}</span>{% if item.source %},{% endif %}
+        {% endif %}
+        {% if item.source %}<span class="ni-source">{{ item.source }}</span>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  {% endfor %}
+
   {% endif %}
 </section>

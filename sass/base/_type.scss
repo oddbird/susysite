@@ -3,9 +3,9 @@
 
 %body {
   strong { font-weight: bold; }
-  em, blockquote { font-style: italic; }
+  em { font-style: italic; }
 
-  p, ul, ol, pre, blockquote { @include trailer; }
+  p, ul, ol, pre { @include trailer; }
   p:empty { display: none; }
   ul { list-style-type: disc; }
   ol { list-style-type: decimal; }
@@ -28,9 +28,9 @@
   }
 
   blockquote {
+    @include trailer(2);
     padding: 0 rhythm(.75);
-    border-left: rhythm(.25) solid;
-    em { font-style: normal; }
+    border-left: color(lightest) rhythm(.25) solid;
   }
 
   ul, ol, blockquote {
@@ -42,6 +42,22 @@
   img {
     max-width: 100%;
     vertical-align: top;
+  }
+
+  .video {
+    @include fluid-ratio;
+    border: 1px solid color(lighter);
+  }
+
+  .quote-body {
+    @include font-size(xlarge);
+    @include trailer(.5);
+    @include wrap-content;
+  }
+
+  .quote-source {
+    @include font-size(small);
+    font-style: italic;
   }
 }
 

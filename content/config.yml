@@ -1,68 +1,180 @@
 ---
 # Banner
-banner_title: Susy
+banner_title: 'Susy'
 banner_url: '/'
 banner_tagline: 'your layout | <em>our math</em>'
 
 
 # Author
-site_author: Eric Suzanne
-site_author_url: http://twitter.com/ericmsuzanne
+site_author: 'Eric Suzanne'
+site_author_url: 'http://twitter.com/ericmsuzanne'
 
 
 # Version
 versions:
-  - title: Version
-    number: 2.0.0
+  - title: 'Version'
+    number: '2.1.1'
     notes: 'http://susydocs.oddbird.net/en/latest/changelog/'
     upgrade: 'http://susydocs.oddbird.net/en/latest/upgrade/'
     code: 'https://github.com/ericam/susy/'
 
 
+# Videos
+videos:
+  - object: '<iframe src="//player.vimeo.com/video/93045089?title=0&amp;byline=0&amp;portrait=0&amp;color=ff0080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+
+
 # News
 news:
-  - title: 'Adding Susy for responsive grids'
+  - title: 'Your Own Damn [Susy] System'
+    author: 'Eric M Suzanne'
+    url: 'https://vimeo.com/93045089'
+    type: 'video'
+    tutorial_version: -2
+    feature: True
+
+  - title: 'Static Grids with Susy 2'
+    author: 'Zell Liew'
+    url: 'http://www.zell-weekeat.com/static-grids-with-susy2/'
+    type: 'tutorial'
+    tutorial_version: -2
+    feature: False
+
+  - title: 'My Favorite Sass Tools'
+    quote: 'If you’re interested in reading Sass poetry, be sure to look at Susy’s source code!'
+    author: 'Hugo Giraudel'
+    source: 'SitePoint'
+    url: 'http://www.sitepoint.com/my-favorite-sass-tools/'
+    type: 'article'
+    tutorial_version: False
+    feature: True
+
+  - title: 'Susy Grids 2.0 with Eric M. Suzanne'
+    author: 'Micah Godbolt'
+    source: 'SassBites'
+    url: 'https://www.youtube.com/watch?v=m7k-vBzebPg'
+    type: 'video'
+    tutorial_version: -2
+    feature: True
+
+  - title: 'A Complete Tutorial to Susy 2 (Part 2)'
+    author: 'Zell Liew'
+    url: 'http://www.zell-weekeat.com/susy2-tutorial-2/'
+    type: 'tutorial'
+    tutorial_version: -2
+    feature: False
+
+  - title: 'A Complete Tutorial to Susy 2 (Part 1)'
+    author: 'Zell Liew'
+    url: 'http://www.zell-weekeat.com/susy2-tutorial/'
+    type: 'tutorial'
+    tutorial_version: -2
+    feature: False
+
+  - title: 'Susy Tutorials (8 Parts)'
+    author: 'Scott Tolinski'
+    source: 'Level Up Tuts'
+    url: 'http://leveluptuts.com/tutorials/susy-tutorials'
+    type: 'video'
+    tutorial_version: -2
+    feature: False
+
+  - title: 'Adding Susy for Responsive Grids'
+    author: 'Ray Villalobos'
     source: 'lynda.com'
     url: 'http://www.lynda.com/CSS-tutorials/Adding-Susy-responsive-grids/140777/153470-4.html'
     type: 'video'
+    tutorial_version: -1
+    feature: False
+
+  - title: 'Responsive and Flexible Grids'
+    author: 'Ben Frain'
+    source: 'Sass & Compass for Designers'
+    url: 'http://sassandcompass.com/chapter5/'
+    type: 'book chapter'
+    tutorial_version: -1
+    feature: False
+
   - title: 'A Complete Tutorial to Susy'
-    source: 'zell-weekeat.com'
+    author: 'Zell Liew'
     url: 'http://www.zell-weekeat.com/a-complete-tutorial-to-susy/'
     type: 'tutorial'
+    tutorial_version: -1
+    feature: False
+
   - title: 'It’s Alive: Prototyping in the Browser'
+    author: 'Patrick Marsceill'
     source: 'Happy Cog'
     url: 'http://cognition.happycog.com/article/its-alive-prototyping-in-the-browser'
     type: 'blog'
+    tutorial_version: False
+    feature: True
+
   - title: 'Responsive Grids With Susy'
+    author: 'Gabriel Manricks'
     source: 'Nettuts+'
     url: 'http://net.tutsplus.com/tutorials/html-css-techniques/responsive-grids-with-susy/'
     type: 'tutorial'
+    tutorial_version: -1
+    feature: False
+
   - title: 'Rapidfire 23'
     source: 'Shop Talk Show'
     url: 'http://shoptalkshow.com/episodes/102-rapidfire-23/#t=47:02'
     type: 'podcast'
+    tutorial_version: False
+    feature: False
+
+  - title: 'Getting Started'
+    url: 'http://susydocs.oddbird.net/en/latest/install/'
+    type: 'docs'
+    tutorial_version: -2
+    feature: False
+
+  - title: 'Upgrade Path'
+    url: 'http://susydocs.oddbird.net/en/latest/upgrade/'
+    type: 'docs'
+    tutorial_version: -2
+    feature: False
+
+  - title: 'Different Grid Types'
+    url: 'grid-types'
+    type: 'docs'
+    tutorial_version: -1
+    feature: False
+
+  - title: 'Mobile-First "Magic" Grids'
+    url: 'magic'
+    type: 'docs'
+    tutorial_version: -1
+    feature: False
 
 
 # Screenshots
 screenshots:
-  - image: /static/screenshots/sasslang.jpg
+  - image: '/static/screenshots/sasslang.jpg'
     alt: 'Sass'
-    target: http://sass-lang.com/
-  - image: /static/screenshots/simple.jpg
+    target: 'http://sass-lang.com/'
+
+  - image: '/static/screenshots/simple.jpg'
     alt: 'Simple'
-    target: https://bank.simple.com/friends/f8d34a0d-f6f5-6d9a-4c5c-c86b2dce4d73
-  - image: /static/screenshots/squaremarket.jpg
+    target: 'https://bank.simple.com/friends/f8d34a0d-f6f5-6d9a-4c5c-c86b2dce4d73'
+
+  - image: '/static/screenshots/squaremarket.jpg'
     alt: 'Square Market'
-    target: http://squareup.com/market
-  - image: /static/screenshots/smithsonian.jpg
+    target: 'http://squareup.com/market'
+
+  - image: '/static/screenshots/smithsonian.jpg'
     alt: 'Smithsonian'
-    target: http://smithsonian.com/
-  - image: /static/screenshots/slickbag.jpg
+    target: 'http://smithsonian.com/'
+
+  - image: '/static/screenshots/slickbag.jpg'
     alt: 'Slickbag'
-    target: http://slickbag.se/
-  - image: /static/screenshots/avoidpaydayloans.jpg
+    target: 'http://slickbag.se/'
+
+  - image: '/static/screenshots/avoidpaydayloans.jpg'
     alt: 'Avoid Payday Loans'
-    target: http://avoidpaydayloans.com
+    target: 'http://avoidpaydayloans.com'
 
 
 # Intro

@@ -2,8 +2,8 @@
   <section id="{{ intro.id }}" class="intro">
     <h2>{{ intro.title|safe }}</h2>
     <p>{{ intro.text|safe }}</p>
-    {% if intro.tagline %}
-      <p>{{ intro.tagline|safe }}</p>
+    {% if intro.video %}
+      <figure class="video">{{ intro.video|safe }}</figure>
     {% endif %}
   </section>
 {% endfor %}

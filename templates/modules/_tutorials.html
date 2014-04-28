@@ -1,0 +1,32 @@
+{% if config.videos %}
+{% for vid in config.videos %}
+<figure class="video">{{ vid.object|safe }}</figure>
+{% endfor %}
+{% endif %}
+
+{% if config.news %}
+{% for version in config.news|groupby('tutorial_version') %}
+{% if version.grouper %}
+<section class="tutorials--{{ version.grouper }}">
+  {% set title='Two' if version.grouper == -2 else 'One' %}
+  <h2>Susy {{ title }}</h2>
+
+  <ul class="tut-list">
+    {% for item in version.list %}
+    <li class="news-item">
+      <strong>
+        <a href="{{ item.url }}" class="ni-title">{{ item.title }}</a>
+      </strong>
+      <span class="ni-type">[{{ item.type }}]</span>
+      {% if item.author or item.source %}—{% endif %}
+      {% if item.author %}
+        <span class="ni-author">{{ item.author }}</span>{% if item.source %},{% endif %}
+      {% endif %}
+      {% if item.source %}<span class="ni-source">{{ item.source }}</span>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+{% endfor %}
+{% endif %}
