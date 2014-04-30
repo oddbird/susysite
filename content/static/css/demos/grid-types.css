@@ -291,19 +291,24 @@ a:hover, a:focus, a:active {
 }
 .content blockquote {
   margin-bottom: 2.77778rem;
-  padding: 0 1.04167rem;
+  padding: 0 1.38889rem;
   border-left: #e5e5e5 0.34722rem solid;
 }
-.content ul, .content ol, .content blockquote {
+.content ul, .content ol {
   margin-left: 1.38889rem;
 }
 @media (min-width: 48em) {
-  .content ul, .content ol, .content blockquote {
+  .content ul, .content ol {
     margin-left: 0;
   }
 }
-.content ul ul, .content ul ol, .content ol ul, .content ol ol, .content blockquote ul, .content blockquote ol {
+.content ul ul, .content ul ol, .content ol ul, .content ol ol {
   margin-left: 1.38889rem;
+}
+@media (min-width: 50em) {
+  .content blockquote {
+    margin-left: -1.38889rem;
+  }
 }
 .content img {
   max-width: 100%;
@@ -330,6 +335,7 @@ a:hover, a:focus, a:active {
   font-size: 2.44444rem;
   line-height: 2.77778rem;
   margin-bottom: 0.69444rem;
+  text-indent: -0.35em;
 }
 .content .quote-body::before, .content .quote-body::after {
   content: "“";

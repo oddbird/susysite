@@ -29,14 +29,18 @@
 
   blockquote {
     @include trailer(2);
-    padding: 0 rhythm(.75);
+    padding: 0 rhythm(1);
     border-left: color(lightest) rhythm(.25) solid;
   }
 
-  ul, ol, blockquote {
+  ul, ol {
     margin-left: rhythm(1);
     @include breakpoint(48em) { margin-left: 0; }
     ul, ol { margin-left: rhythm(1); }
+  }
+
+  blockquote {
+    @include breakpoint(50em) { margin-left: rhythm(-1); }
   }
 
   img {
