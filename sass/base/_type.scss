@@ -53,6 +53,7 @@
     @include font-size(xlarge);
     @include trailer(.5);
     @include wrap-content;
+    text-indent: -0.35em;
   }
 
   .quote-source {
