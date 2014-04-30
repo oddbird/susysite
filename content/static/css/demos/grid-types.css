@@ -289,6 +289,12 @@ a:hover, a:focus, a:active {
   border-left: 0.34722rem solid rgba(255, 204, 229, 0.5);
   background: #fcfcfc;
 }
+@media (min-width: 50em) {
+  .content pre {
+    margin-left: -1.04167rem;
+    margin-right: -1.04167rem;
+  }
+}
 .content blockquote {
   margin-bottom: 2.77778rem;
   padding: 0 1.38889rem;

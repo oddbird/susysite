@@ -25,6 +25,11 @@
     padding: rhythm(.5);
     border-left: rhythm(.25) solid color(lightest $alt, .5);
     background: color(98%);
+
+    @include breakpoint(50em) {
+      margin-left: rhythm(-.75);
+      margin-right: rhythm(-.75);
+    }
   }
 
   blockquote {
