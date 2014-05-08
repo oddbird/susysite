@@ -13,6 +13,7 @@ Everyone
 --------
 
 - `Sass <http://sass-lang.com>`_
+- `Python <http://python.org>`_
 - `Sass and Compass book <http://sassandcompass.com>`_
 - `Square Market <https://squareup.com/market>`_
 - `Simple <http://simple.com>`_

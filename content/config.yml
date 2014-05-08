@@ -156,10 +156,6 @@ screenshots:
     alt: 'Sass'
     target: 'http://sass-lang.com/'
 
-  - image: '/static/screenshots/simple.jpg'
-    alt: 'Simple'
-    target: 'https://bank.simple.com/friends/f8d34a0d-f6f5-6d9a-4c5c-c86b2dce4d73'
-
   - image: '/static/screenshots/squaremarket.jpg'
     alt: 'Square Market'
     target: 'http://squareup.com/market'
@@ -168,9 +164,13 @@ screenshots:
     alt: 'Smithsonian'
     target: 'http://smithsonian.com/'
 
-  - image: '/static/screenshots/slickbag.jpg'
-    alt: 'Slickbag'
-    target: 'http://slickbag.se/'
+  - image: '/static/screenshots/python.jpg'
+    alt: 'Python'
+    target: 'http://python.org/'
+
+  - image: '/static/screenshots/simple.jpg'
+    alt: 'Simple'
+    target: 'https://bank.simple.com/friends/f8d34a0d-f6f5-6d9a-4c5c-c86b2dce4d73'
 
   - image: '/static/screenshots/avoidpaydayloans.jpg'
     alt: 'Avoid Payday Loans'
