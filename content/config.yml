@@ -26,6 +26,21 @@ videos:
 
 # News
 news:
+  - title: 'Susy Tutorials (11 Parts)'
+    author: 'Scott Tolinski'
+    source: 'Level Up Tuts'
+    url: 'http://leveluptuts.com/tutorials/susy-tutorials'
+    type: 'video'
+    tutorial_version: -2
+    feature: True
+
+  - title: 'Your Own Damn [Susy] System'
+    author: 'Eric M Suzanne'
+    url: 'https://vimeo.com/93045089'
+    type: 'video'
+    tutorial_version: -2
+    feature: True
+
   - title: 'Your Own Damn [Susy] System'
     author: 'Eric M Suzanne'
     url: 'https://vimeo.com/93045089'
@@ -68,14 +83,6 @@ news:
     author: 'Zell Liew'
     url: 'http://www.zell-weekeat.com/susy2-tutorial/'
     type: 'tutorial'
-    tutorial_version: -2
-    feature: False
-
-  - title: 'Susy Tutorials (8 Parts)'
-    author: 'Scott Tolinski'
-    source: 'Level Up Tuts'
-    url: 'http://leveluptuts.com/tutorials/susy-tutorials'
-    type: 'video'
     tutorial_version: -2
     feature: False
 
