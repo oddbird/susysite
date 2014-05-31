@@ -41,13 +41,6 @@ news:
     tutorial_version: -2
     feature: True
 
-  - title: 'Your Own Damn [Susy] System'
-    author: 'Eric M Suzanne'
-    url: 'https://vimeo.com/93045089'
-    type: 'video'
-    tutorial_version: -2
-    feature: True
-
   - title: 'Static Grids with Susy 2'
     author: 'Zell Liew'
     url: 'http://www.zell-weekeat.com/static-grids-with-susy2/'
