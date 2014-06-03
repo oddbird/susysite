@@ -26,6 +26,15 @@ videos:
 
 # News
 news:
+  - title: 'Responsive: A Harrowing Meditation on the Brutal Realities of Web Content Organization, in 5 Acts'
+    author: 'Stephany Varga'
+    source: 'Zendesk Creative Collection'
+    quote: 'Susy and Zendesk have been getting along magically... It’s precisely what you need and nothing more.'
+    url: 'https://medium.com/zendesk-creative-blog/responsive-a-harrowing-meditation-on-the-brutal-realities-of-web-content-organization-in-5-acts-1d33ce25f062'
+    type: 'article'
+    tutorial_version: False
+    feature: True
+
   - title: 'Susy Tutorials (11 Parts)'
     author: 'Scott Tolinski'
     source: 'Level Up Tuts'
@@ -39,7 +48,7 @@ news:
     url: 'https://vimeo.com/93045089'
     type: 'video'
     tutorial_version: -2
-    feature: True
+    feature: False
 
   - title: 'Static Grids with Susy 2'
     author: 'Zell Liew'
@@ -106,7 +115,7 @@ news:
     author: 'Patrick Marsceill'
     source: 'Happy Cog'
     url: 'http://cognition.happycog.com/article/its-alive-prototyping-in-the-browser'
-    type: 'blog'
+    type: 'article'
     tutorial_version: False
     feature: True
 

@@ -1,14 +1,10 @@
 <section id="{{ module.id|default('news') }}">
-  <h2 class="section-title">{{ module.title|default('News') }}</h2>
-
-  {% set more=true %}
-  {% include "modules/_screenshots_gallery.html" %}
+  <h2 class="section-title">{{ module.title|default('Recent News') }}</h2>
 
   {% if config.news %}
 
   {% for feature in config.news|groupby('feature') %}
   {% if feature.grouper %}
-    <h3 class="news-title">Recent News</h3>
     <ul class="news-list">
       {% for item in feature.list %}
       <li class="news-item">
