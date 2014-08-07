@@ -26,6 +26,58 @@ videos:
 
 # News
 news:
+  - title: 'Susy Grid Grab Bag'
+    author: 'Micah Godbolt'
+    source: 'SassBites'
+    url: 'https://www.youtube.com/watch?v=O8APW7ogrIw'
+    type: 'video'
+    tutorial_version: -2
+    feature: True
+
+  - title: 'Putting Susy Grids to Work'
+    author: 'Micah Godbolt'
+    source: 'SassBites'
+    url: 'https://www.youtube.com/watch?v=rBKfH8UTn7w'
+    type: 'video'
+    tutorial_version: -2
+    feature: True
+
+  - title: 'Susy Grids - Layout Settings'
+    author: 'Micah Godbolt'
+    source: 'SassBites'
+    url: 'https://www.youtube.com/watch?v=B31uLW6Vg24'
+    type: 'video'
+    tutorial_version: -2
+    feature: True
+
+  - title: 'Susy RWD Marker'
+    author: 'Chris Maxwell'
+    url: 'http://www.chrismaxwell.com/susy-rwd-marker'
+    type: 'tutorial'
+    tutorial_version: -1
+    feature: False
+
+  - title: 'Susy 102 - Breakpoints'
+    author: 'Chris Maxwell'
+    url: 'http://www.chrismaxwell.com/susy-102-breakpoints'
+    type: 'tutorial'
+    tutorial_version: -1
+    feature: False
+
+  - title: 'Susy 101 - Spanning Columns'
+    author: 'Chris Maxwell'
+    url: 'http://www.chrismaxwell.com/susy-101-spanning-columns'
+    type: 'tutorial'
+    tutorial_version: -1
+    feature: False
+
+  - title: 'Setting Up Susy'
+    author: 'Chris Maxwell'
+    url: 'http://www.chrismaxwell.com/setting-up-susy'
+    type: 'tutorial'
+    tutorial_version: -1
+    feature: False
+
   - title: 'Making the Envato Marketplaces Responsive'
     author: 'Jordan Lewis'
     source: 'We build Envato'
@@ -49,7 +101,7 @@ news:
     url: 'http://leveluptuts.com/tutorials/susy-tutorials'
     type: 'video'
     tutorial_version: -2
-    feature: True
+    feature: False
 
   - title: 'Your Own Damn [Susy] System'
     author: 'Eric M Suzanne'
@@ -80,7 +132,7 @@ news:
     url: 'https://www.youtube.com/watch?v=m7k-vBzebPg'
     type: 'video'
     tutorial_version: -2
-    feature: True
+    feature: False
 
   - title: 'A Complete Tutorial to Susy 2 (Part 2)'
     author: 'Zell Liew'
@@ -125,7 +177,7 @@ news:
     url: 'http://cognition.happycog.com/article/its-alive-prototyping-in-the-browser'
     type: 'article'
     tutorial_version: False
-    feature: True
+    feature: False
 
   - title: 'Responsive Grids With Susy'
     author: 'Gabriel Manricks'
@@ -187,7 +239,7 @@ screenshots:
 
   - image: '/static/screenshots/simple.jpg'
     alt: 'Simple'
-    target: 'https://bank.simple.com/friends/f8d34a0d-f6f5-6d9a-4c5c-c86b2dce4d73'
+    target: 'https://bank.simple.com/'
 
   - image: '/static/screenshots/mediamolecule.jpg'
     alt: 'Media Molecule'
