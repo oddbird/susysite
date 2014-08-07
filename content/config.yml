@@ -239,7 +239,7 @@ screenshots:
 
   - image: '/static/screenshots/simple.jpg'
     alt: 'Simple'
-    target: 'https://bank.simple.com/'
+    target: 'http://simple.com/'
 
   - image: '/static/screenshots/mediamolecule.jpg'
     alt: 'Media Molecule'
