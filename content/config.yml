@@ -26,6 +26,14 @@ videos:
 
 # News
 news:
+  - title: 'Susy (For Sass) Now Supported'
+    author: 'Chris Coyier'
+    source: 'CodePen'
+    url: 'http://blog.codepen.io/2014/08/21/susy-sass-now-supported/'
+    type: 'article'
+    tutorial_version: False
+    feature: True
+
   - title: 'Susy Grid Grab Bag'
     author: 'Micah Godbolt'
     source: 'SassBites'
@@ -124,7 +132,7 @@ news:
     url: 'http://www.sitepoint.com/my-favorite-sass-tools/'
     type: 'article'
     tutorial_version: False
-    feature: True
+    feature: False
 
   - title: 'Susy Grids 2.0 with Eric M. Suzanne'
     author: 'Micah Godbolt'

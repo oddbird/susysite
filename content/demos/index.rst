@@ -1,5 +1,10 @@
 public: yes
 before:
+  - include: 'modules/_notice.html'
+    body: |
+      Susy is now supported on both
+      <a href="http://codepen.io">CodePen</a> and
+      <a href="http://sassmeister.com/">SassMeister</a>!
   - include: 'modules/_tutorials.html'
 
 

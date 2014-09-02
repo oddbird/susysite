@@ -373,7 +373,7 @@ a:hover, a:focus, a:active {
   padding: 0.69444rem;
   border-left: 0.34722rem solid #e5e5e5;
   background: rgba(229, 229, 229, 0.5);
-  font-style: italic;
+  margin-bottom: 1.38889rem;
 }
 [class*="callout"] strong {
   font-style: normal;
