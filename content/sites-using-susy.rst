@@ -65,6 +65,7 @@ Everyone
 - `Nord Restaurant <http://www.nordrestaurant.co.uk/>`_
 - `Christina Lauer <http://christinalauer.net>`_
 - `Western New Mexico University <http://wnmu.edu>`_
+- `Esquire UK <http://www.esquire.co.uk>`_
 
 
 Contribute A Site
