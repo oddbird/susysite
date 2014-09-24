@@ -421,11 +421,17 @@ a:hover, a:focus, a:active {
   .gallery > a, .gallery > img {
     width: 48.97959%;
     float: left;
-    margin-right: 2.04082%;
   }
-  .gallery > a:nth-child(even), .gallery > img:nth-child(even) {
-    float: right;
-    margin-right: 0;
+  .gallery > a:nth-child(2n + 1), .gallery > img:nth-child(2n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  .gallery > a:nth-child(2n + 2), .gallery > img:nth-child(2n + 2) {
+    margin-left: 51.02041%;
+    margin-right: -100%;
+    clear: none;
   }
 }
 .gallery > a {

@@ -12,8 +12,7 @@ $gallery-break: 35em;
     @include box-shadow(0 0 size(xxxsmall) color(dark, .5));
 
     @include breakpoint($gallery-break) {
-      @include span(5 of 10 after);
-      &:nth-child(even) { @include last(of 10 after); }
+      @include gallery(5 of 10 after);
     }
   }
 
