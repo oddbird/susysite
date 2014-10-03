@@ -5,7 +5,7 @@
       <a href="{{ config.site_author_url }}">{{ config.site_author }}</a>
     </b>
 
-    with major contributions from
+    with
     {% for contrib in config.credit %}
       {% if loop.last %}and{% endif %}
       <a href="{{ contrib.url }}">{{ contrib.name|safe }}</a>{% if loop.last %}.{% else %},{% endif %}
