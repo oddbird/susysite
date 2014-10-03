@@ -14,6 +14,7 @@ Everyone
 
 - `Sass <http://sass-lang.com>`_
 - `Python <http://python.org>`_
+- `Locust <http://locust.io>`_
 - `FrontCube <http://frontcube.com>`_
 - `Sass and Compass book <http://sassandcompass.com>`_
 - `Square Market <https://squareup.com/market>`_
