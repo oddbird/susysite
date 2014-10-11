@@ -28,7 +28,6 @@ videos:
 news:
   - title: 'How to Create Off Canvas Layouts with Susy'
     author: 'Zell Liew'
-    source: 'CodePen'
     url: 'http://www.zell-weekeat.com/off-canvas-layouts-susy/'
     type: 'tutorial'
     tutorial_version: -2
@@ -53,7 +52,6 @@ news:
 
   - title: 'Smarter Layouts with Susy'
     author: 'Zell Liew'
-    source: 'CodePen'
     url: 'http://www.zell-weekeat.com/smarter-layouts-with-susy/'
     type: 'tutorial'
     tutorial_version: -2
