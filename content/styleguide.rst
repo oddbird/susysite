@@ -14,7 +14,7 @@ Language
 --------
 
 - "Susy" (``Soo•zee``) is pronounced like the common name (often spelled "Suzy").
-  It's not an acronymn for anything, so there's no reason to use all-caps.
+  It's not an acronym for anything, so there's no reason to use all-caps.
 - The name may be feminine, but Susy is software and has no gender or sex.
   Please use a neutral pronoun (``it``) when referring to Susy,
   and refrain from gendered personifications (in text or images).
