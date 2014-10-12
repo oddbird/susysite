@@ -19,5 +19,6 @@
       {% if loop.last %}and{% endif %}
       <a href="{{ dep.url }}">{{ dep.name|safe }}</a>{% if loop.last %}.{% else %},{% endif %}
     {% endfor %}
+    [<a href="/styleguide/">Style Guide</a>]
   </p>
 </footer>
