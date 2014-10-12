@@ -1,0 +1,14 @@
+{% extends "blog/index.html" %}
+
+
+{% block title %}Entries by {{ author.name }}{% endblock %}
+{% block bodyclasses %}blog archive{% endblock %}
+
+{% block feedlinks %}
+{{ super() }}
+<link href="feed.atom" rel="alternate" title="OddBird posts by '{{ author.name }}'" type="application/atom+xml">
+{% endblock %}
+
+{% block list_intro %}
+  {{ author.name }}
+{% endblock list_intro %}

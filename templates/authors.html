@@ -1,0 +1,17 @@
+{% extends "blog/archives.html" %}
+
+
+{% block title %}Authors | {{ super() }}{% endblock %}
+{% block archivetype %}authors{% endblock archivetype %}
+
+{% block archive %}
+  <h1 class="archivetitle">Authors</h1>
+  <ul class="archivelist">
+  {%- for author in get_authors(limit=50) %}
+    <li class="archiveentry">
+      <a href="{{ link_to('author', author=author.name) }}" rel="bookmark">{{ author.name }}</a>
+      <b class="archivecount">{{ author.count }}</b>
+    </li>
+  {%- endfor %}
+  </ul>
+{% endblock %}

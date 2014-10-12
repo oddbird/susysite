@@ -359,7 +359,14 @@ colophon:
 
 
 # Settings
-active_modules: [pygments_simple, tags, blog, wrap, typogrify]
+active_modules: [
+  pygments_simple,
+  tags,
+  blog,
+  author,
+  wrap,
+  typogrify
+  ]
 author: Eric
 canonical_url: http://susy.oddbird.net/
 output_folder: ../output

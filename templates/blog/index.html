@@ -1,31 +1,15 @@
-{% extends "layout.html" %}
-{% block title %}Blog{% endblock %}
-{% block main %}
+{% extends "blog/archives.html" %}
 
-  {%- for ctx in pagination.get_slice() %}
-  <article class="post">
-    <h1 class="title">
-      <a href="{{ link_to('page', slug=ctx.slug) }}">
-        {{ ctx.title }}
-      </a>
-    </h1>
+{% import "blog/macros.j2" as blog %}
 
-    {% include "_byline.html" %}
+{% block title %}Blog | {{ super() }}{% endblock %}
 
-    <div class="body">
-      {% if ctx.summary %}
-        {{ ctx.render_summary() }}
-        <a href="{{ link_to('page', slug=ctx.slug) }}" class="readmore">
-          read more
-        </a>
-      {% else %}
-        {{ ctx.render_contents() }}
-      {% endif %}
-    </div>
-  </article>
+{% block archive %}
+  {%- for post in pagination.get_slice() %}
+    {{ blog.list(post) }}
   {%- endfor %}
 
   {% if show_pagination and pagination.pages > 1 %}
     {{ pagination }}
   {% endif %}
-{% endblock %}
+{% endblock archive %}

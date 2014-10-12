@@ -411,6 +411,9 @@ a:hover, a:focus, a:active {
   display: block;
   clear: both;
 }
+.gallery img {
+  width: 100%;
+}
 .gallery > a, .gallery > img {
   margin-bottom: 0.69444rem;
   -moz-box-shadow: 0 0 9px rgba(102, 102, 102, 0.5);
@@ -450,9 +453,6 @@ a:hover, a:focus, a:active {
   -webkit-transform: scale(1.05, 1.05);
   transform: scale(1.05, 1.05);
   z-index: 10;
-}
-.gallery img {
-  width: 100%;
 }
 
 .gallery-caption {

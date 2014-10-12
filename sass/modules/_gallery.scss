@@ -7,6 +7,8 @@ $gallery-break: 35em;
   @include susy-clearfix;
   @include trailer;
 
+  img { width: 100%; }
+
   > a, > img {
     @include trailer(.5);
     @include box-shadow(0 0 size(xxxsmall) color(dark, .5));
@@ -26,8 +28,6 @@ $gallery-break: 35em;
       z-index: 10;
     }
   }
-
-  img { width: 100%; }
 }
 
 .gallery-caption {

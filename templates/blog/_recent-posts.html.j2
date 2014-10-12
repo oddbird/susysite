@@ -1,0 +1,10 @@
+<section class="recent-posts">
+  <h2 class="rp-title">Recent Posts</h2>
+  <ul class="rp-list">
+    {%- for entry in get_recent_blog_entries(5) %}
+    <li>
+      <a href="{{ link_to('page', slug=entry.slug) }}"  rel="bookmark">{{ entry.title }}</a>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
