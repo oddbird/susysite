@@ -317,15 +317,15 @@ nav:
 # Credits
 credit:
   - name: 'Aaron Gray'
-    url: http://twitter.com/mragray
-  - name: 'Zell Liew'
-    url: https://twitter.com/zellwk
-  - name: 'Tsachi Shlidor'
-    url: http://twitter.com/shlidor
+    url: http://twitter.com/aaronagray
   - name: 'Jina'
     url: http://twitter.com/jina
   - name: 'Rachel Nabors'
     url: http://twitter.com/rachelnabors
+  - name: 'Tsachi Shlidor'
+    url: http://twitter.com/shlidor
+  - name: 'Zell Liew'
+    url: https://twitter.com/zellwk
   - name: 'many&nbsp;others'
     url: https://github.com/ericam/susy/graphs/contributors
 
