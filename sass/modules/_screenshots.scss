@@ -22,7 +22,9 @@ $screenshot-ratio: 598/1000;
     }
 
     @include breakpoint($gallery-break) {
-      padding-bottom: $screenshot-ratio * span(5 of 10 after);
+      &:not([class~='full']) {
+        padding-bottom: $screenshot-ratio * span(5 of 10 after);
+      }
     }
   }
 

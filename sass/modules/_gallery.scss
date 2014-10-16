@@ -8,25 +8,28 @@ $gallery-break: 35em;
   @include trailer;
 
   img { width: 100%; }
+}
 
-  > a, > img {
-    @include trailer(.5);
-    @include box-shadow(0 0 size(xxxsmall) color(dark, .5));
+.gallery-item {
+  @include trailer(.5);
+  @include box-shadow(0 0 size(xxxsmall) color(dark, .5));
 
-    @include breakpoint($gallery-break) {
-      @include gallery(5 of 10 after);
+  @include breakpoint($gallery-break) {
+    @include span(5 of 10 split);
+
+    &.full {
+      @include full(of 10 split);
     }
   }
+}
 
-  > a {
-    @include transition(all 150ms);
-    display: block;
+.gallery-link {
+  @include transition(all 150ms);
+  display: block;
 
-    @include focus {
-      @include box-shadow(0 0 size(xxxsmall) color(darker $accent));
-      @include scale(1.05);
-      z-index: 10;
-    }
+  @include focus {
+    @include box-shadow(0 0 size(xxxsmall) color(darker $accent));
+    z-index: 10;
   }
 }
 

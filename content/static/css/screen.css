@@ -414,44 +414,40 @@ a:hover, a:focus, a:active {
 .gallery img {
   width: 100%;
 }
-.gallery > a, .gallery > img {
+
+.gallery-item {
   margin-bottom: 0.69444rem;
   -moz-box-shadow: 0 0 9px rgba(102, 102, 102, 0.5);
   -webkit-box-shadow: 0 0 9px rgba(102, 102, 102, 0.5);
   box-shadow: 0 0 9px rgba(102, 102, 102, 0.5);
 }
 @media (min-width: 35em) {
-  .gallery > a, .gallery > img {
-    width: 48.97959%;
+  .gallery-item {
+    width: 48%;
     float: left;
+    margin-left: 1%;
+    margin-right: 1%;
   }
-  .gallery > a:nth-child(2n + 1), .gallery > img:nth-child(2n + 1) {
-    margin-left: 0;
-    margin-right: -100%;
+  .gallery-item.full {
     clear: both;
-    margin-left: 0;
-  }
-  .gallery > a:nth-child(2n + 2), .gallery > img:nth-child(2n + 2) {
-    margin-left: 51.02041%;
-    margin-right: -100%;
-    clear: none;
+    width: 98%;
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
   }
 }
-.gallery > a {
+
+.gallery-link {
   -moz-transition: all 150ms;
   -o-transition: all 150ms;
   -webkit-transition: all 150ms;
   transition: all 150ms;
   display: block;
 }
-.gallery > a:hover, .gallery > a:focus, .gallery > a:active {
+.gallery-link:hover, .gallery-link:focus, .gallery-link:active {
   -moz-box-shadow: 0 0 9px #005f7f;
   -webkit-box-shadow: 0 0 9px #005f7f;
   box-shadow: 0 0 9px #005f7f;
-  -moz-transform: scale(1.05, 1.05);
-  -ms-transform: scale(1.05, 1.05);
-  -webkit-transform: scale(1.05, 1.05);
-  transform: scale(1.05, 1.05);
   z-index: 10;
 }
 
@@ -851,7 +847,7 @@ a:hover, a:focus, a:active {
   opacity: 1;
 }
 @media (min-width: 35em) {
-  .screenshots .site-link {
+  .screenshots .site-link:not([class~='full']) {
     padding-bottom: 29.2898%;
   }
 }

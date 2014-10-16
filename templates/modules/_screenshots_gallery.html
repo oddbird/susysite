@@ -1,6 +1,6 @@
 <div class="gallery screenshots">
   {% for shot in config.screenshots %}
-    <a href="{{ shot.target }}" class="site-link" style="background-image: url({{ shot.image }});">
+    <a href="{{ shot.target }}" class="gallery-item gallery-link site-link {% if shot.class %}{{ shot.class }}{% endif %}" style="background-image: url({{ shot.image }});">
       <span class="site-name">{{ shot.alt }}</span>
     </a>
   {% endfor %}

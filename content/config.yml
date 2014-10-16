@@ -268,21 +268,25 @@ screenshots:
     alt: 'Square Market'
     target: 'http://squareup.com/market'
 
-  - image: '/static/screenshots/smithsonian.jpg'
-    alt: 'Smithsonian'
-    target: 'http://smithsonian.com/'
-
   - image: '/static/screenshots/python.jpg'
     alt: 'Python'
     target: 'http://python.org/'
+
+  - image: '/static/screenshots/mediamolecule.jpg'
+    alt: 'Media Molecule'
+    target: 'http://mediamolecule.com'
+
+  - image: '/static/screenshots/esquire.jpg'
+    alt: 'Esquire UK'
+    target: 'http://www.esquire.co.uk'
 
   - image: '/static/screenshots/simple.jpg'
     alt: 'Simple'
     target: 'http://simple.com/'
 
-  - image: '/static/screenshots/mediamolecule.jpg'
-    alt: 'Media Molecule'
-    target: 'http://mediamolecule.com'
+  # - image: '/static/screenshots/smithsonian.jpg'
+  #   alt: 'Smithsonian'
+  #   target: 'http://smithsonian.com/'
 
 
 # Intro
