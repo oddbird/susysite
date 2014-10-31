@@ -26,6 +26,13 @@ videos:
 
 # News
 news:
+  - title: 'Breaking Free from Bootstrap: Custom Responsive Grids with Sass Susy'
+    author: 'James Steinbach'
+    url: 'http://www.slideshare.net/JamesSteinbach/breaking-free-from-bootstrap'
+    type: slides
+    tutorial_version: -2
+    feature: True
+
   - title: 'Fix 90% of Your Problems With Susy by Getting This One Concept Right'
     author: 'Zell Liew'
     url: 'http://www.zell-weekeat.com/context-with-susy/'
