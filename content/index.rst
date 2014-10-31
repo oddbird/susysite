@@ -102,3 +102,35 @@ We'd love to `hear your ideas`_ as well.
 .. _Singularity: http://singularity.gs/
 .. _Zen Grids: http://next.zengrids.com/
 .. _hear your ideas: http://github.com/ericam/susy/issues
+
+
+Read the Book!
+--------------
+
+`Zell Liew`_ wrote a great book to get you started with Susy.
+You can even `Get the first five chapters for free`_!
+Here are some of the things that you'll learn:
+
+.. or use the discout code ``oddbirds`` for 20% off the entire package!
+
+
+|book|
+
+- How to use the **Span Mixin**
+- How to output the **Background Grid**
+- How to configure the **Global Settings** to your needs
+- How to do **mobile-first responsive coding** with Susy and Breakpoint
+- How different **gutter-positions** affect your layout
+- How to build **asymmetric layouts** without breaking a sweat
+- How to use the **isolation to prevent subpixel rounding** errors
+
+
+.. _Zell Liew: http://zell-weekeat.com/
+.. _Get the first five chapters for free: http://zell-weekeat.com/learnsusy/#signup
+.. |book| raw:: html
+
+  <figure data-media="left">
+    <a href="http://zell-weekeat.com/learnsusy/#signup">
+      <img src="http://zell-weekeat.com/learnsusy/images/book-dark-cover.png" />
+    </a>
+  </figure>

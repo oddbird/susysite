@@ -458,6 +458,30 @@ a:hover, a:focus, a:active {
   font-style: italic;
 }
 
+[data-media] {
+  margin-bottom: 1.38889rem;
+}
+[data-media] iframe,
+[data-media] img,
+[data-media] video {
+  width: 100%;
+}
+
+[data-media='left'],
+[data-media='right'] {
+  width: 33.33333%;
+}
+
+[data-media='left'] {
+  float: left;
+  margin-right: 2.77778rem;
+}
+
+[data-media='right'] {
+  float: right;
+  margin-left: 2.77778rem;
+}
+
 .head {
   padding-top: 0.69444rem;
   background: white;

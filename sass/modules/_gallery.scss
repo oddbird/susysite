@@ -38,3 +38,28 @@ $gallery-break: 35em;
   @include font-size(small);
   font-style: italic;
 }
+
+[data-media] {
+  @include trailer;
+
+  iframe,
+  img,
+  video {
+    width: 100%;
+  }
+}
+
+[data-media='left'],
+[data-media='right'] {
+  width: percentage(1/3);
+}
+
+[data-media='left'] {
+  float: left;
+  margin-right: rhythm(2);
+}
+
+[data-media='right'] {
+  float: right;
+  margin-left: rhythm(2);
+}

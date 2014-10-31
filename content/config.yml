@@ -26,6 +26,20 @@ videos:
 
 # News
 news:
+  - title: 'Fix 90% of Your Problems With Susy by Getting This One Concept Right'
+    author: 'Zell Liew'
+    url: 'http://www.zell-weekeat.com/context-with-susy/'
+    type: tutorial
+    tutorial_version: -2
+    feature: True
+
+  - title: 'Sass Grids: From Neat To Susy'
+    author: 'James Steinbach'
+    url: 'http://www.sitepoint.com/sass-grids-neat-susy/'
+    type: tutorial
+    tutorial_version: -2
+    feature: True
+
   - title: 'How to Create Off Canvas Layouts with Susy'
     author: 'Zell Liew'
     url: 'http://www.zell-weekeat.com/off-canvas-layouts-susy/'
