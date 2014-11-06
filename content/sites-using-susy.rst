@@ -68,7 +68,7 @@ Everyone
 - `Western New Mexico University <http://wnmu.edu>`_
 - `Dave Smith Foundation <http://davesmithfoundation.org>`_
 - `Esquire UK <http://www.esquire.co.uk>`_
-
+- `Ryan LaBar Portfolio <http://lost-designs.com>`_
 
 Contribute A Site
 -----------------
