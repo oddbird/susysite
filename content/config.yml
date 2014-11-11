@@ -26,6 +26,14 @@ videos:
 
 # News
 news:
+  - title: 'Responsive Takes Flight: Building The 1st Responsive Airline Website'
+    author: 'Oliver Dore'
+    url: 'http://youtu.be/o7I1P9yh8Rc'
+    source: 'ng-europe'
+    type: video
+    tutorial_version: False
+    feature: True
+
   - title: 'Breaking Free from Bootstrap: Custom Responsive Grids with Sass Susy'
     author: 'James Steinbach'
     url: 'http://www.slideshare.net/JamesSteinbach/breaking-free-from-bootstrap'
@@ -52,7 +60,7 @@ news:
     url: 'http://www.zell-weekeat.com/off-canvas-layouts-susy/'
     type: 'tutorial'
     tutorial_version: -2
-    feature: True
+    feature: False
 
   - title: 'Build Web Layouts Easily with Susy'
     author: 'Zell Liew'
@@ -60,7 +68,7 @@ news:
     url: 'http://css-tricks.com/build-web-layouts-easily-susy/'
     type: 'tutorial'
     tutorial_version: -2
-    feature: True
+    feature: False
 
   - title: 'Build Web Layouts Easily with Susy'
     author: 'Chris Coyier'
@@ -76,7 +84,7 @@ news:
     url: 'http://www.zell-weekeat.com/smarter-layouts-with-susy/'
     type: 'tutorial'
     tutorial_version: -2
-    feature: True
+    feature: False
 
   - title: 'Susy (For Sass) Now Supported'
     author: 'Chris Coyier'
@@ -92,7 +100,7 @@ news:
     url: 'https://www.youtube.com/watch?v=O8APW7ogrIw'
     type: 'video'
     tutorial_version: -2
-    feature: True
+    feature: False
 
   - title: 'Putting Susy Grids to Work'
     author: 'Micah Godbolt'
@@ -100,7 +108,7 @@ news:
     url: 'https://www.youtube.com/watch?v=rBKfH8UTn7w'
     type: 'video'
     tutorial_version: -2
-    feature: True
+    feature: False
 
   - title: 'Susy Grids - Layout Settings'
     author: 'Micah Godbolt'
@@ -108,7 +116,7 @@ news:
     url: 'https://www.youtube.com/watch?v=B31uLW6Vg24'
     type: 'video'
     tutorial_version: -2
-    feature: True
+    feature: False
 
   - title: 'Susy RWD Marker'
     author: 'Chris Maxwell'
@@ -285,9 +293,17 @@ screenshots:
     alt: 'Sass'
     target: 'http://sass-lang.com/'
 
+  - image: '/static/screenshots/virginamerica.jpg'
+    alt: 'Virgin America'
+    target: 'https://www.virginamerica.com/'
+
   - image: '/static/screenshots/squaremarket.jpg'
     alt: 'Square Market'
     target: 'http://squareup.com/market'
+
+  - image: '/static/screenshots/esquire.jpg'
+    alt: 'Esquire UK'
+    target: 'http://www.esquire.co.uk'
 
   - image: '/static/screenshots/python.jpg'
     alt: 'Python'
@@ -297,17 +313,13 @@ screenshots:
     alt: 'Media Molecule'
     target: 'http://mediamolecule.com'
 
-  - image: '/static/screenshots/esquire.jpg'
-    alt: 'Esquire UK'
-    target: 'http://www.esquire.co.uk'
-
   - image: '/static/screenshots/simple.jpg'
     alt: 'Simple'
     target: 'http://simple.com/'
 
-  # - image: '/static/screenshots/smithsonian.jpg'
-  #   alt: 'Smithsonian'
-  #   target: 'http://smithsonian.com/'
+  - image: '/static/screenshots/smithsonian.jpg'
+    alt: 'Smithsonian'
+    target: 'http://smithsonian.com/'
 
 
 # Intro
