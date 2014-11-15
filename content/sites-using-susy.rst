@@ -70,6 +70,7 @@ Everyone
 - `Dave Smith Foundation <http://davesmithfoundation.org>`_
 - `Esquire UK <http://www.esquire.co.uk>`_
 - `Ryan LaBar Portfolio <http://lost-designs.com>`_
+- `Emilien Durand Portfolio <http://emiliendurand.fr>`_
 
 Contribute A Site
 -----------------
