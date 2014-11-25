@@ -71,6 +71,7 @@ Everyone
 - `Esquire UK <http://www.esquire.co.uk>`_
 - `Ryan LaBar Portfolio <http://lost-designs.com>`_
 - `Emilien Durand Portfolio <http://emiliendurand.fr>`_
+- `Institute for Higher Education Policy <http://www.ihep.org>`_
 
 Contribute A Site
 -----------------
