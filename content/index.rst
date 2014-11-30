@@ -20,7 +20,7 @@ Rapid Prototypes, Built to Scale
 
 Rapid prototypes
 are only the start to a long process
-of development, changes, handoffs, and maintanance.
+of development, changes, handoffs, and maintenance.
 Susy is built to evolve with your project for the long haul.
 
 `Get started`_ quickly
