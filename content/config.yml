@@ -13,7 +13,7 @@ site_author_url: 'http://twitter.com/ericmsuzanne'
 # Version
 versions:
   - title: 'Version'
-    number: '2.1.3'
+    number: '2.2.1'
     notes: 'http://susydocs.oddbird.net/en/latest/changelog/'
     upgrade: 'http://susydocs.oddbird.net/en/latest/upgrade/'
     code: 'https://github.com/ericam/susy/'
