@@ -72,6 +72,7 @@ Everyone
 - `Ryan LaBar Portfolio <http://lost-designs.com>`_
 - `Emilien Durand Portfolio <http://emiliendurand.fr>`_
 - `Institute for Higher Education Policy <http://www.ihep.org>`_
+- `Epitaph Records <http://epitaph.com>`_
 
 Contribute A Site
 -----------------
