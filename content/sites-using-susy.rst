@@ -74,6 +74,7 @@ Everyone
 - `Institute for Higher Education Policy <http://www.ihep.org>`_
 - `Epitaph Records <http://epitaph.com>`_
 - `Shrewd Design Studio <http://shrewd-design.com>`_
+- `thecorner.com <http://www.thecorner.com>`_
 
 Contribute A Site
 -----------------
