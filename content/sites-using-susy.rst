@@ -75,6 +75,7 @@ Everyone
 - `Epitaph Records <http://epitaph.com>`_
 - `Shrewd Design Studio <http://shrewd-design.com>`_
 - `thecorner.com <http://www.thecorner.com>`_
+- `Fromagerie Amstutz <http://www.fromagerieamstutz.ch/>`_
 
 Contribute A Site
 -----------------
