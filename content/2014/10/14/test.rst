@@ -1,5 +1,5 @@
 public: no
-author: eric
+author: miriam
 
 
 Welcome to the Susy Blog!

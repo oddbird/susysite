@@ -6,8 +6,8 @@ banner_tagline: 'your layout | <em>our math</em>'
 
 
 # Author
-site_author: 'Eric M. Suzanne'
-site_author_url: 'http://twitter.com/ericmsuzanne'
+site_author: 'E. Miriam Suzanne'
+site_author_url: 'http://twitter.com/mirisuzanne'
 
 
 # Version
@@ -172,7 +172,7 @@ news:
     feature: False
 
   - title: 'Your Own Damn [Susy] System'
-    author: 'Eric M Suzanne'
+    author: 'E. Miriam Suzanne'
     url: 'https://vimeo.com/93045089'
     type: 'video'
     tutorial_version: -2
@@ -194,7 +194,7 @@ news:
     tutorial_version: False
     feature: False
 
-  - title: 'Susy Grids 2.0 with Eric M. Suzanne'
+  - title: 'Susy Grids 2.0 with E. Miriam Suzanne'
     author: 'Micah Godbolt'
     source: 'SassBites'
     url: 'https://www.youtube.com/watch?v=m7k-vBzebPg'
@@ -404,7 +404,7 @@ active_modules: [
   wrap,
   typogrify
   ]
-author: Eric
+author: Miriam
 canonical_url: http://susy.oddbird.net/
 output_folder: ../output
 template_path: ../templates
