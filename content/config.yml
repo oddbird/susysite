@@ -6,17 +6,17 @@ banner_tagline: 'your layout | <em>our math</em>'
 
 
 # Author
-site_author: 'E. Miriam Suzanne'
+site_author: 'Miriam Eric Suzanne'
 site_author_url: 'http://twitter.com/mirisuzanne'
 
 
 # Version
 versions:
   - title: 'Version'
-    number: '2.2.1'
+    number: '2.2.7'
     notes: 'http://susydocs.oddbird.net/en/latest/changelog/'
     upgrade: 'http://susydocs.oddbird.net/en/latest/upgrade/'
-    code: 'https://github.com/ericam/susy/'
+    code: 'https://github.com/oddbird/susy/'
 
 
 # Videos
@@ -120,28 +120,28 @@ news:
 
   - title: 'Susy RWD Marker'
     author: 'Chris Maxwell'
-    url: 'http://www.chrismaxwell.com/susy-rwd-marker'
+    url: 'http://blog.chrismaxwell.com/susy-rwd-marker'
     type: 'tutorial'
     tutorial_version: -1
     feature: False
 
   - title: 'Susy 102 - Breakpoints'
     author: 'Chris Maxwell'
-    url: 'http://www.chrismaxwell.com/susy-102-breakpoints'
+    url: 'http://blog.chrismaxwell.com/susy-102-breakpoints'
     type: 'tutorial'
     tutorial_version: -1
     feature: False
 
   - title: 'Susy 101 - Spanning Columns'
     author: 'Chris Maxwell'
-    url: 'http://www.chrismaxwell.com/susy-101-spanning-columns'
+    url: 'http://blog.chrismaxwell.com/susy-101-spanning-columns'
     type: 'tutorial'
     tutorial_version: -1
     feature: False
 
   - title: 'Setting Up Susy'
     author: 'Chris Maxwell'
-    url: 'http://www.chrismaxwell.com/setting-up-susy'
+    url: 'http://blog.chrismaxwell.com/setting-up-susy'
     type: 'tutorial'
     tutorial_version: -1
     feature: False
@@ -172,7 +172,7 @@ news:
     feature: False
 
   - title: 'Your Own Damn [Susy] System'
-    author: 'E. Miriam Suzanne'
+    author: 'Miriam Eric Suzanne'
     url: 'https://vimeo.com/93045089'
     type: 'video'
     tutorial_version: -2
@@ -194,7 +194,7 @@ news:
     tutorial_version: False
     feature: False
 
-  - title: 'Susy Grids 2.0 with E. Miriam Suzanne'
+  - title: 'Susy Grids 2.0 with Miriam Eric Suzanne'
     author: 'Micah Godbolt'
     source: 'SassBites'
     url: 'https://www.youtube.com/watch?v=m7k-vBzebPg'
@@ -364,7 +364,7 @@ credit:
   - name: 'Zell Liew'
     url: https://twitter.com/zellwk
   - name: 'many&nbsp;others'
-    url: https://github.com/ericam/susy/graphs/contributors
+    url: https://github.com/oddbird/susy/graphs/contributors
 
 
 # Colophon

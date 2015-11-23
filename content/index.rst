@@ -101,7 +101,7 @@ We'd love to `hear your ideas`_ as well.
 .. _Salsa: http://tsi.github.io/Salsa/
 .. _Singularity: http://singularity.gs/
 .. _Zen Grids: http://next.zengrids.com/
-.. _hear your ideas: http://github.com/ericam/susy/issues
+.. _hear your ideas: http://github.com/oddbird/susy/issues
 
 
 Read the Book!
