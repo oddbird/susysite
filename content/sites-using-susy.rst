@@ -15,6 +15,8 @@ Everyone
 - `Sass <http://sass-lang.com>`_
 - `Python <http://python.org>`_
 - `Virgin America <https://www.virginamerica.com/>`_
+- `Le Figaro Premium (French newspaper) <http://premium.lefigaro.fr/>`_
+- `TV Mag (by Le Figaro) <http://tvmag.lefigaro.fr/>`_
 - `Locust <http://locust.io>`_
 - `FrontCube <http://frontcube.com>`_
 - `Sass and Compass book <http://sassandcompass.com>`_
