@@ -1,0 +1,7 @@
+*.DS_Store
+*~
+*.pyc
+.sass-cache/
+*.orig
+.cache/
+npm-debug.log
