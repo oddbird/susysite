@@ -79,6 +79,8 @@ Everyone
 - `thecorner.com <http://www.thecorner.com>`_
 - `Fromagerie Amstutz <http://www.fromagerieamstutz.ch/>`_
 - `Trailpost Outdoors <https://www.trailpost.com/>`_
+- `Heyevent <http://heyevent.com>`_
+
 
 Contribute A Site
 -----------------
