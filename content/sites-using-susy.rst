@@ -80,7 +80,8 @@ Everyone
 - `Fromagerie Amstutz <http://www.fromagerieamstutz.ch/>`_
 - `Trailpost Outdoors <https://www.trailpost.com/>`_
 - `Heyevent <http://heyevent.com>`_
-
+- `Vashhelper <https://vashhelper.ru/>`_
+- `Global Intent <https://vebrazrabotka.com.ua/>`_
 
 Contribute A Site
 -----------------
