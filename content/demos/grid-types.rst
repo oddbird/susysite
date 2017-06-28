@@ -1,4 +1,5 @@
 public: yes
+redirect: 'http://susyone.oddbird.net/demos/grid-types/'
 template: demo.html
 styles: grid-types.css
 

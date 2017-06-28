@@ -1,4 +1,5 @@
 public: yes
+redirect: 'http://oddbird.net/susy/sites/'
 before:
   - include: 'modules/_screenshots.html'
     title: Featured Sites

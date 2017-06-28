@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8" />
 
+  {% block redirect %}{% endblock %}
+
   <!-- Page Info -->
   <title>{% block title %}Susy{% endblock %}</title>
   <meta name="description" content="{% block description %}Custom layout engine for Sass{% endblock description %}" />
@@ -43,7 +45,7 @@
   <link rel="stylesheet" href="/static/css/screen.css" />
   {% endblock styles %}
 </head>
-<body id="susy" class="{% block bodyclasses %}{% endblock %}">
+<body id="susy" class="{% block bodyclasses %}{% endblock %}" {% block onload %}{% endblock %}>
   {% block layout %}{% endblock %}
 
   <script>
