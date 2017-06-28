@@ -45,7 +45,7 @@
   <link rel="stylesheet" href="/static/css/screen.css" />
   {% endblock styles %}
 </head>
-<body id="susy" class="{% block bodyclasses %}{% endblock %}">
+<body id="susy" class="{% block bodyclasses %}{% endblock %}" {% block onload %}{% endblock %}>
   {% block layout %}{% endblock %}
 
   <script>

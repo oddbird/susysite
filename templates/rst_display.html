@@ -1,14 +1,16 @@
 {% extends "layout.html" %}
 {% block title %}{% if config.meta_title %}{{ config.meta_title }}{% else %}{{ rst.title }} | {{ super() }}{% endif %}{% endblock %}
 
+{% set new_url = 'http://oddbird.net/susy/' %}
+{% set new_url = config.redirect or new_url %}
+
 {% block redirect %}
-  {% set new_url = 'http://oddbird.net/susy/' %}
-  {% set new_url = config.redirect or new_url %}
   <!-- Redirect the user to <new_url>-->
   <meta http-equiv="refresh" content="0; url={{ new_url }}">
   <!-- Make it know that <new_url> is the canonical URL -->
   <link rel="canonical" href="{{ new_url }}" />
 {% endblock %}
+{% block onload %}onload="window.location.replace('{{ new_url }}')"{% endblock %}
 
 {% block styles %}
   {{ super() }}
