@@ -1,4 +1,5 @@
 public: yes
+redirect: 'http://oddbird.net/susy/articles/'
 before:
   - include: 'modules/_notice.html'
     body: |

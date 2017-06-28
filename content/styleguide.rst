@@ -1,4 +1,5 @@
 public: yes
+redirect: 'http://oddbird.net/susy/styleguide/'
 
 
 Style Guide

@@ -1,4 +1,5 @@
 public: yes
+redirect: 'http://susyone.oddbird.net/demos/magic/'
 template: demo.html
 
 
