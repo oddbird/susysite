@@ -1,18 +1,1 @@
 {% extends "base.html" %}
-
-{% block layout %}
-<div class="head">
-  {% include "layout/_banner.html" %}
-  {% include "layout/_nav.html" %}
-</div>
-
-<div class="content">
-<main role="main">
-  {% block main %}{% endblock %}
-</main>
-</div>
-
-<div class="foot">
-  {% include "layout/_contentinfo.html" %}
-</div>
-{% endblock %}

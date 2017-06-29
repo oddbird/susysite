@@ -11,32 +11,3 @@
   <link rel="canonical" href="{{ new_url }}" />
 {% endblock %}
 {% block onload %}onload="window.location.replace('{{ new_url }}')"{% endblock %}
-
-{% block styles %}
-  {{ super() }}
-  {% if config.styles %}
-    <link rel="stylesheet" href="/static/css/{{ config.styles }}">
-  {% endif %}
-{% endblock styles %}
-
-{% block bodyclasses %}{{ super() }}{% if config.bodyclasses %} {{ config.bodyclasses }}{% endif %}{% endblock %}
-
-{% block main %}
-
-  {%- if not config.hide_title %}
-  {{ rst.html_title }}
-  {%- endif %}
-
-  {% include "_byline.html" %}
-
-  {% for module in config.before %}
-    {% include module.include %}
-  {% endfor %}
-
-  {{ rst.fragment }}
-
-  {% for module in config.after %}
-    {% include module.include %}
-  {% endfor %}
-
-{% endblock %}
